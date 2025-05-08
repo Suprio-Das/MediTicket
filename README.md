@@ -1,5 +1,5 @@
 # MediTicket
-Mediticket is a medical ticket managing website from where tickets for specific departments will be sold to the patient. After providing certain information about the patient, an e-ticket will be generated which can be printed and given to the patient.
+MediTicket is a medical ticket managing website from where tickets for specific departments will be sold to the patient. After providing certain information about the patient, an e-ticket will be generated which can be printed and given to the patient.
 <br><br>
 ### Possible features:
 1. Ticket sales based on room capacity and specific time period
