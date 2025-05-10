@@ -1,3 +1,4 @@
+import { Link } from 'react-router';
 import MediTicketLogo from '../../assets/MediTicket.png';
 
 const Navbar = () => {
@@ -29,7 +30,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn">Button</a>
+                    <Link className="btn">Login</Link>
                 </div>
             </div>
         </div>
