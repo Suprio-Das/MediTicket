@@ -1,12 +1,13 @@
 import { Link } from 'react-router';
 import MediTicketLogo from '../../assets/MediTicket.png';
 import { IoMdMailUnread } from "react-icons/io";
+import { MdCall } from "react-icons/md";
 const Navbar = () => {
     return (
         <div>
             <div className='bg-amber-500 p-2 flex justify-center gap-5'>
                 <p className='flex items-center gap-0.5'><IoMdMailUnread className='mt-0.5' /> mediticket@gmail.com</p>
-                <p>01610243377</p>
+                <p className='flex items-center gap-0.5'><MdCall /> 01610243377</p>
                 <p>Chattogram, Bangladesh</p>
             </div>
             <div className="navbar bg-base-100 shadow-sm">
