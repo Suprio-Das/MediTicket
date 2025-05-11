@@ -5,7 +5,7 @@ const Navbar = () => {
     return (
         <div>
             <div className='bg-amber-500 p-2 flex justify-center gap-5'>
-                <p><IoMdMailUnread /> mediticket@gmail.com</p>
+                <p className='flex items-center gap-0.5'><IoMdMailUnread className='mt-0.5' /> mediticket@gmail.com</p>
                 <p>01610243377</p>
                 <p>Chattogram, Bangladesh</p>
             </div>
