@@ -1,4 +1,4 @@
-import { Link } from 'react-router';
+import { Link, NavLink } from 'react-router';
 import MediTicketLogo from '../../assets/MediTicket.png';
 import { IoMdMailUnread } from "react-icons/io";
 import { MdCall } from "react-icons/md";
@@ -20,20 +20,20 @@ const Navbar = () => {
                         <ul
                             tabIndex={0}
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                            <li><Link>Ticket</Link></li>
-                            <li><Link>Stats</Link></li>
-                            <li><Link>Doctors</Link></li>
+                            <li><NavLink>Ticket</NavLink></li>
+                            <li><NavLink>Stats</NavLink></li>
+                            <li><NavLink>Doctors</NavLink></li>
                         </ul>
                     </div>
-                    <Link className="text-xl">
+                    <Link to='/' className="text-xl">
                         <img src={MediTicketLogo} alt="MediTicketLogo" className='w-42' />
                     </Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
-                        <li><Link>Ticket</Link></li>
-                        <li><Link>Stats</Link></li>
-                        <li><Link>Doctors</Link></li>
+                        <li><NavLink>Ticket</NavLink></li>
+                        <li><NavLink>Stats</NavLink></li>
+                        <li><NavLink>Doctors</NavLink></li>
                     </ul>
                 </div>
                 <div className="navbar-end">
