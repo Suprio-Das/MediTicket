@@ -1,6 +1,17 @@
 import Marquee from "react-fast-marquee";
 
 const Home = () => {
+    const dummyNotice = [
+        {
+            name: "The seat limit of Dengue Department is full. For emergency, contact MediTicket office."
+        },
+        {
+            name: "Don't trust the outsources. We do everything in legal way no third party required."
+        },
+        {
+            name: "Apply as Nurse - There are open vacancies in Medicine Department."
+        }
+    ]
     return (
         <div>
             {/* Notice Board */}
