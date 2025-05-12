@@ -19,7 +19,9 @@ const Home = () => {
                 <div className="bg-gray-200 p-2 flex items-center">
                     <button className="btn bg-[#275596] outline-0 text-white">Notice: </button>
                     <Marquee>
-                        I can be a React component, multiple React components, or just some text.
+                        {
+                            dummyNotice.map((notice, index) => <span key={index} className="mr-16">{notice.name}</span>)
+                        }
                     </Marquee>
                 </div>
             </div>
