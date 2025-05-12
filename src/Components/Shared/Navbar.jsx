@@ -20,9 +20,9 @@ const Navbar = () => {
                         <ul
                             tabIndex={0}
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                            <li><NavLink>Ticket</NavLink></li>
-                            <li><NavLink>Stats</NavLink></li>
-                            <li><NavLink>Doctors</NavLink></li>
+                            <li><NavLink to='/'>Ticket</NavLink></li>
+                            <li><NavLink to='/stats'>Stats</NavLink></li>
+                            <li><NavLink to='/doctors'>Doctors</NavLink></li>
                         </ul>
                     </div>
                     <Link to='/' className="text-xl">
