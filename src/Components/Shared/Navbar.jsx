@@ -6,7 +6,7 @@ import { IoLocation } from "react-icons/io5";
 const Navbar = () => {
     return (
         <div>
-            <div className='bg-[#275596] p-2 flex justify-center gap-5'>
+            <div className='bg-[#275596] p-2 flex justify-center gap-5 text-neutral-200'>
                 <p className='flex items-center gap-0.5'><IoMdMailUnread className='mt-0.5' /> mediticket@gmail.com</p>
                 <p className='flex items-center gap-0.5'><MdCall /> 01610243377</p>
                 <p className='flex items-center gap-0.5'><IoLocation /> Chattogram, Bangladesh</p>
