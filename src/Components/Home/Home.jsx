@@ -18,7 +18,7 @@ const Home = () => {
             <div>
                 <div className="bg-gray-200 p-2 flex items-center">
                     <button className="btn bg-[#275596] outline-0 text-white">Notice: </button>
-                    <Marquee pauseOnHover={true}>
+                    <Marquee pauseOnHover={true} speed={100}>
                         {
                             dummyNotice.map((notice, index) => <span key={index} className="mr-16">{notice.name}</span>)
                         }
