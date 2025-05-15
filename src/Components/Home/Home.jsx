@@ -26,14 +26,16 @@ const Home = () => {
                 </div>
             </div>
             {/* Ticket Section */}
-            <section className="p-2 grid lg:grid-cols-3 grid-cols-1">
-                {/* Ticket Input */}
-                <div className="col-span-2">
-                    <h1>Ticket Input - Left Layout</h1>
-                </div>
-                {/* Ticket Print */}
-                <div className="col-span-1">
-                    <h1>Ticket Output - Right Layout</h1>
+            <section className="p-2">
+                <div className="grid lg:grid-cols-3 grid-cols-1">
+                    {/* Ticket Input */}
+                    <div className="col-span-2">
+                        <h1>Ticket Input - Left Layout</h1>
+                    </div>
+                    {/* Ticket Print */}
+                    <div className="col-span-1">
+                        <h1>Ticket Output - Right Layout</h1>
+                    </div>
                 </div>
             </section>
         </div>
