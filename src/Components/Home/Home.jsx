@@ -26,7 +26,7 @@ const Home = () => {
                 </div>
             </div>
             {/* Ticket Section */}
-            <section>
+            <section className="p-2">
                 {/* Ticket Input */}
                 <div>
                     <h1>Ticket Input - Left Layout</h1>
