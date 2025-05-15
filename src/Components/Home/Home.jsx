@@ -33,7 +33,7 @@ const Home = () => {
                     <div className="col-span-2 p-2">
                         <h1 className="text-lg font-semibold">Input Patient Information</h1>
                         {/* Patient Information Form */}
-                        <form>
+                        <form className="grid lg:grid-cols-2 grid-cols-1 gap-5">
                             {/* Patient Name and Age----------------------------------------------------------------- */}
                             <fieldset className="fieldset">
                                 <legend className="fieldset-legend">Enter Patient Name</legend>
