@@ -38,7 +38,7 @@ const Home = () => {
                             <div>
                                 <fieldset className="fieldset">
                                     <legend className="fieldset-legend">Enter Patient Name</legend>
-                                    <input type="text" className="input" placeholder="Type Patient Name here" />
+                                    <input type="text" className="input" placeholder="Type Patient Name here" name="name" />
                                 </fieldset>
                             </div>
                         </form>
