@@ -31,7 +31,7 @@ const Home = () => {
                 <div className="grid lg:grid-cols-3 grid-cols-1 border-2">
                     {/* Ticket Input */}
                     <div className="col-span-2 p-2">
-                        <h1>Ticket Input - Left Layout</h1>
+                        <h1 className="text-lg font-semibold">Input Patient Information</h1>
                     </div>
                     {/* Ticket Print */}
                     <div className="col-span-1 border-l-2 p-2">
