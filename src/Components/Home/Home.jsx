@@ -25,6 +25,17 @@ const Home = () => {
                     </Marquee>
                 </div>
             </div>
+            {/* Ticket Section */}
+            <section>
+                {/* Ticket Input */}
+                <div>
+                    <h1>Ticket Input - Left Layout</h1>
+                </div>
+                {/* Ticket Print */}
+                <div>
+                    <h1>Ticket Output - Right Layout</h1>
+                </div>
+            </section>
         </div>
     );
 };
