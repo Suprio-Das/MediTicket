@@ -40,6 +40,10 @@ const Home = () => {
                                     <legend className="fieldset-legend">Enter Patient Name</legend>
                                     <input type="text" className="input" placeholder="Type Patient Name here" name="name" />
                                 </fieldset>
+                                <fieldset className="fieldset">
+                                    <legend className="fieldset-legend">Enter Patient Age</legend>
+                                    <input type="text" className="input" placeholder="Type Patient Age here" name="age" />
+                                </fieldset>
                             </div>
                         </form>
                     </div>
