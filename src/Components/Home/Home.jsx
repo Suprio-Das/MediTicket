@@ -32,6 +32,16 @@ const Home = () => {
                     {/* Ticket Input */}
                     <div className="col-span-2 p-2">
                         <h1 className="text-lg font-semibold">Input Patient Information</h1>
+                        {/* Patient Information Form */}
+                        <form>
+                            {/* Patient Name and Age */}
+                            <div>
+                                <fieldset className="fieldset">
+                                    <legend className="fieldset-legend">Enter Patient Name</legend>
+                                    <input type="text" className="input" placeholder="Type Patient Name here" />
+                                </fieldset>
+                            </div>
+                        </form>
                     </div>
                     {/* Ticket Print */}
                     <div className="col-span-1 border-l-2 p-2">
