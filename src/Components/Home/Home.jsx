@@ -27,7 +27,7 @@ const Home = () => {
             </div>
             {/* Ticket Section */}
             <section className="p-2">
-                <h1>Generate Ticket</h1>
+                <h1 className="lg:text-4xl text-xl font-semibold text-center">Generate Ticket 🎫</h1>
                 <div className="grid lg:grid-cols-3 grid-cols-1">
                     {/* Ticket Input */}
                     <div className="col-span-2">
