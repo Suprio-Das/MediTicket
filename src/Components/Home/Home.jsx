@@ -35,7 +35,7 @@ const Home = () => {
                     </div>
                     {/* Ticket Print */}
                     <div className="col-span-1 border-l-2 p-2">
-                        <h1>Ticket Output - Right Layout</h1>
+                        <h1 className="text-lg font-semibold">Download or Print Ticket</h1>
                     </div>
                 </div>
             </section>
