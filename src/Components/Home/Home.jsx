@@ -29,7 +29,7 @@ const Home = () => {
             </div>
             {/* Ticket Section */}
             <section className="p-2">
-                <h1 className="lg:text-4xl text-xl font-semibold text-center my-3">Generate Ticket <Lottie animationData={TicketLottie} className="w-18" /></h1>
+                <h1 className="lg:text-4xl text-xl font-semibold text-center my-3 flex items-center justify-center gap-2">Generate Ticket <Lottie animationData={TicketLottie} className="w-18" /></h1>
                 <div className="grid lg:grid-cols-3 grid-cols-1 border-2">
                     {/* Ticket Input */}
                     <div className="col-span-2 p-5">
