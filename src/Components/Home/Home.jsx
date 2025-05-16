@@ -30,7 +30,7 @@ const Home = () => {
                 <h1 className="lg:text-4xl text-xl font-semibold text-center my-3">Generate Ticket 🎫</h1>
                 <div className="grid lg:grid-cols-3 grid-cols-1 border-2">
                     {/* Ticket Input */}
-                    <div className="col-span-2 p-2">
+                    <div className="col-span-2 p-5">
                         <h1 className="text-lg font-semibold">Input Patient Information</h1>
                         {/* Patient Information Form */}
                         <form className="grid lg:grid-cols-2 grid-cols-1 gap-5">
@@ -47,7 +47,7 @@ const Home = () => {
                         </form>
                     </div>
                     {/* Ticket Print */}
-                    <div className="col-span-1 border-l-2 p-2">
+                    <div className="col-span-1 border-l-2 p-5">
                         <h1 className="text-lg font-semibold">Download or Print Ticket</h1>
                     </div>
                 </div>
