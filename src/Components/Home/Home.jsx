@@ -78,6 +78,15 @@ const Home = () => {
                                 <legend className="fieldset-legend">Enter Patient Case</legend>
                                 <input type="text" className="input w-full outline-1" placeholder="Type Patient Case here" name="case" />
                             </fieldset>
+                            <fieldset className="fieldset">
+                                <legend className="fieldset-legend">Select Gender</legend>
+                                <select defaultValue="Select a Gender" className="select w-full outline-1" name="gender">
+                                    <option disabled={true}>Select a Gender</option>
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                    <option>Others</option>
+                                </select>
+                            </fieldset>
 
                         </form>
                     </div>
