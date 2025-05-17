@@ -26,6 +26,12 @@ const Ticket = () => {
                     <td>Date</td>
                     <td>2025-05.17</td>
                 </tr>
+                <tr>
+                    <td>Name</td>
+                    <td>Suprio Das</td>
+                    <td>Age</td>
+                    <td>23</td>
+                </tr>
             </table>
         </div>
     );
