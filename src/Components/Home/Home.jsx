@@ -36,6 +36,7 @@ const Home = () => {
                         <h1 className="text-lg font-semibold">Input Patient Information</h1>
                         {/* Patient Information Form */}
                         <form className="grid lg:grid-cols-2 grid-cols-1 gap-5">
+
                             {/* Patient Name and Age----------------------------------------------------------------- */}
                             <fieldset className="fieldset">
                                 <legend className="fieldset-legend">Enter Patient Name</legend>
@@ -46,6 +47,22 @@ const Home = () => {
                                 <input type="text" className="input w-full outline-1" placeholder="Type Patient Age here" name="age" />
                             </fieldset>
                             {/* Patient Name and Age------------------------------------------------------------------ */}
+
+                            {/* Department and Room No.----------------------------------------------------------------- */}
+                            <fieldset className="fieldset">
+                                <legend className="fieldset-legend">Select Department</legend>
+                                <select defaultValue="Select a Department" className="select" name="department">
+                                    <option disabled={true}>Select a Department</option>
+                                    <option>Medicine</option>
+                                    <option>Skin</option>
+                                    <option>Eye</option>
+                                    <option>Dental</option>
+                                    <option>Dialysis</option>
+                                    <option>Neuro Medicine</option>
+                                </select>
+                            </fieldset>
+                            {/* Patient Name and Age------------------------------------------------------------------ */}
+
                         </form>
                     </div>
                     {/* Ticket Print */}
