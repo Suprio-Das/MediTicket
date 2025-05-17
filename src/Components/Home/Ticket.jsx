@@ -3,7 +3,7 @@ import TicketQR from '../../assets/qrcode.png'
 
 const Ticket = () => {
     return (
-        <div className='border-1 p-2 rounded-xs mt-5'>
+        <div className='border-1 p-3 rounded-xs mt-5'>
             {/* Header Section */}
             <div className='flex justify-between items-center'>
                 <div>
