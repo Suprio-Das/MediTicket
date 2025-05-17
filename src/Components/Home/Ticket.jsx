@@ -19,6 +19,7 @@ const Ticket = () => {
             </div>
             <p className='text-xs text-center'>Email: mediticket@gmail.com Website: mediticket.gov.bd</p>
             {/* Table */}
+            <h1 className='text-center my-2 underline text-sm'>Patient Ticket</h1>
             <table className='table text-xs'>
                 <tr>
                     <td>Reg No.</td>
