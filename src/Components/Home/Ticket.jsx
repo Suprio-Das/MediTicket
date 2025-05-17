@@ -2,7 +2,7 @@ import MediTicketLogo from '../../assets/MediTicketFavicon.png'
 
 const Ticket = () => {
     return (
-        <div>
+        <div className='border-1 p-2 rounded-xs mt-5'>
             {/* Header Section */}
             <div className='flex justify-between items-center'>
                 <div>
