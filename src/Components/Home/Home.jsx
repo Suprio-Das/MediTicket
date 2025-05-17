@@ -73,6 +73,12 @@ const Home = () => {
                             </fieldset>
                             {/* Patient Name and Age------------------------------------------------------------------ */}
 
+                            {/* Patient Case and Gender--------------------------------------------------------------- */}
+                            <fieldset className="fieldset">
+                                <legend className="fieldset-legend">Enter Patient Case</legend>
+                                <input type="text" className="input w-full outline-1" placeholder="Type Patient Case here" name="case" />
+                            </fieldset>
+
                         </form>
                     </div>
                     {/* Ticket Print */}
