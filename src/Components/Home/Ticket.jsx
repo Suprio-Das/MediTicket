@@ -44,6 +44,10 @@ const Ticket = () => {
                     <td>Gender</td>
                     <td>Male</td>
                 </tr>
+                <tr>
+                    <td>Price</td>
+                    <td colSpan="3">500.00</td>
+                </tr>
             </table>
         </div>
     );
