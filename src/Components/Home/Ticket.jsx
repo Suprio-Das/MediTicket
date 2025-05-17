@@ -38,6 +38,12 @@ const Ticket = () => {
                     <td>Room No.</td>
                     <td>210</td>
                 </tr>
+                <tr>
+                    <td>Case</td>
+                    <td>Ezyness</td>
+                    <td>Gender</td>
+                    <td>Male</td>
+                </tr>
             </table>
         </div>
     );
