@@ -1,4 +1,5 @@
 import MediTicketLogo from '../../assets/MediTicketFavicon.png'
+import TicketQR from '../../assets/qrcode.png'
 
 const Ticket = () => {
     return (
@@ -50,6 +51,11 @@ const Ticket = () => {
                     <td colSpan="3">500.00</td>
                 </tr>
             </table>
+
+            {/* QR Code Section */}
+            <div>
+                <img src={TicketQR} alt="TicketQR" className='w-16 h-16 mx-auto' />
+            </div>
         </div>
     );
 };
