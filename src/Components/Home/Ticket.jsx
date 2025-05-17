@@ -32,6 +32,12 @@ const Ticket = () => {
                     <td>Age</td>
                     <td>23</td>
                 </tr>
+                <tr>
+                    <td>Department</td>
+                    <td>Eye</td>
+                    <td>Room No.</td>
+                    <td>210</td>
+                </tr>
             </table>
         </div>
     );
