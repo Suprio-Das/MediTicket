@@ -1,7 +1,12 @@
+import MediTicketLogo from '../../assets/MediTicketFavicon.png'
+
 const Ticket = () => {
     return (
         <div>
-            <h1>This is ticket.</h1>
+            {/* Header Section */}
+            <div>
+                <img src={MediTicketLogo} alt="MediTicketLogo" className='w-8' />
+            </div>
         </div>
     );
 };
