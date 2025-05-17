@@ -12,6 +12,7 @@ const Ticket = () => {
                     <p className='text-xs'>Phone: 01610-2433** Fax: 031-610022</p>
                     <p className='text-xs'>Email: mediticket@gmail.com Website: mediticket.gov.bd</p>
                 </div>
+                <img src={MediTicketLogo} alt="MediTicketLogo" className='w-8' />
             </div>
         </div>
     );
