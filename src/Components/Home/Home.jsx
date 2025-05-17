@@ -1,6 +1,7 @@
 import Marquee from "react-fast-marquee";
 import TicketLottie from '../../assets/Ticket-Lottie.json'
 import Lottie from "lottie-react";
+import Ticket from "./Ticket";
 
 const Home = () => {
     const dummyNotice = [
@@ -87,12 +88,15 @@ const Home = () => {
                                     <option>Others</option>
                                 </select>
                             </fieldset>
+                            {/* Patient Case and Gender--------------------------------------------------------------- */}
+
                             <button className="btn bg-[#275596] text-white font-normal col-span-2">Generate Ticket</button>
                         </form>
                     </div>
                     {/* Ticket Print */}
                     <div className="col-span-1 border-l-2 p-5">
                         <h1 className="text-lg font-semibold">Download or Print Ticket</h1>
+                        <Ticket></Ticket>
                     </div>
                 </div>
             </section>
