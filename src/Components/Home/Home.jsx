@@ -87,7 +87,7 @@ const Home = () => {
                                     <option>Others</option>
                                 </select>
                             </fieldset>
-                            <button className="btn col-span-2">Generate Ticket</button>
+                            <button className="btn bg-[#275596] text-white font-normal col-span-2">Generate Ticket</button>
                         </form>
                     </div>
                     {/* Ticket Print */}
