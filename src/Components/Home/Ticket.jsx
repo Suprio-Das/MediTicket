@@ -18,6 +18,15 @@ const Ticket = () => {
                 </div>
             </div>
             <p className='text-xs text-center'>Email: mediticket@gmail.com Website: mediticket.gov.bd</p>
+            {/* Table */}
+            <table className='table text-xs'>
+                <tr>
+                    <td>Reg No.</td>
+                    <td>123444444444</td>
+                    <td>Date</td>
+                    <td>2025-05.17</td>
+                </tr>
+            </table>
         </div>
     );
 };
