@@ -97,6 +97,9 @@ const Home = () => {
                     <div className="col-span-1 border-l-2 p-5">
                         <h1 className="text-lg font-semibold">Download or Print Ticket</h1>
                         <Ticket></Ticket>
+                        <div>
+                            <button className="btn bg-[#275596] mt-2 text-white w-full">Print</button>
+                        </div>
                     </div>
                 </div>
             </section>
