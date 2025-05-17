@@ -51,7 +51,7 @@ const Home = () => {
                             {/* Department and Room No.----------------------------------------------------------------- */}
                             <fieldset className="fieldset">
                                 <legend className="fieldset-legend">Select Department</legend>
-                                <select defaultValue="Select a Department" className="select" name="department">
+                                <select defaultValue="Select a Department" className="select w-full outline-1" name="department">
                                     <option disabled={true}>Select a Department</option>
                                     <option>Medicine</option>
                                     <option>Skin</option>
