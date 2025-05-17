@@ -17,6 +17,7 @@ const Ticket = () => {
                     <img src={MediTicketLogo} alt="MediTicketLogo" className='w-8' />
                 </div>
             </div>
+            <p className='text-xs text-center'>Email: mediticket@gmail.com Website: mediticket.gov.bd</p>
         </div>
     );
 };
