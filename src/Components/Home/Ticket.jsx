@@ -56,6 +56,13 @@ const Ticket = () => {
             <div>
                 <img src={TicketQR} alt="TicketQR" className='w-16 h-16 mx-auto' />
             </div>
+
+            {/* Footer */}
+            <div>
+                <p className='text-xs text-center'>N:B: Kindly preserve this slip for future visits.</p>
+                <p className='text-xs text-center'>2025-May-17 10:00:00 PM</p>
+                <p className='text-xs text-center'>Developed and Maintained by Suprio Das</p>
+            </div>
         </div>
     );
 };
