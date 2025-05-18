@@ -14,7 +14,14 @@ const Home = () => {
         {
             name: "Apply as Nurse - There are open vacancies in Medicine Department."
         }
-    ]
+    ];
+
+    // Handling Ticket Form
+    const handleTicketGenerate = (e) => {
+        e.preventDefault();
+        console.log("Handle Ticket Generate Function Clicked!!!");
+    }
+
     return (
         <div>
             {/* Notice Board */}
@@ -36,7 +43,7 @@ const Home = () => {
                     <div className="col-span-2 p-5">
                         <h1 className="text-lg font-semibold">Input Patient Information</h1>
                         {/* Patient Information Form */}
-                        <form className="grid lg:grid-cols-2 grid-cols-1 gap-5">
+                        <form className="grid lg:grid-cols-2 grid-cols-1 gap-5" onSubmit={handleTicketGenerate}>
 
                             {/* Patient Name and Age----------------------------------------------------------------- */}
                             <fieldset className="fieldset">
