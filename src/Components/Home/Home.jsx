@@ -66,10 +66,12 @@ const Home = () => {
                                 <legend className="fieldset-legend">Select Room No.</legend>
                                 <select defaultValue="Select a Room" className="select w-full outline-1" name="room">
                                     <option disabled={true}>Select a Room</option>
-                                    <option>210</option>
-                                    <option>110</option>
-                                    <option>101</option>
-                                    <option>501</option>
+                                    <option>101-M (50)</option>
+                                    <option>201-S (50)</option>
+                                    <option>202-E (50)</option>
+                                    <option>203-D (50)</option>
+                                    <option>301-D (50)</option>
+                                    <option>401-N (50)</option>
                                 </select>
                             </fieldset>
                             {/* Patient Name and Age------------------------------------------------------------------ */}
