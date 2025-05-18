@@ -22,34 +22,37 @@ const Ticket = () => {
             {/* Table */}
             <h1 className='text-center my-2 underline text-sm'>Patient Ticket</h1>
             <table className='table text-xs'>
-                <tr>
-                    <td>Reg No.</td>
-                    <td>123444444444</td>
-                    <td>Date</td>
-                    <td>2025-05.17</td>
-                </tr>
-                <tr>
-                    <td>Name</td>
-                    <td>Suprio Das</td>
-                    <td>Age</td>
-                    <td>23</td>
-                </tr>
-                <tr>
-                    <td>Department</td>
-                    <td>Eye</td>
-                    <td>Room No.</td>
-                    <td>210</td>
-                </tr>
-                <tr>
-                    <td>Case</td>
-                    <td>Ezyness</td>
-                    <td>Gender</td>
-                    <td>Male</td>
-                </tr>
-                <tr>
-                    <td>Price</td>
-                    <td colSpan="3">500.00</td>
-                </tr>
+                <thead></thead>
+                <tbody>
+                    <tr>
+                        <td>Reg No.</td>
+                        <td>123444444444</td>
+                        <td>Date</td>
+                        <td>2025-05.17</td>
+                    </tr>
+                    <tr>
+                        <td>Name</td>
+                        <td>Suprio Das</td>
+                        <td>Age</td>
+                        <td>23</td>
+                    </tr>
+                    <tr>
+                        <td>Department</td>
+                        <td>Eye</td>
+                        <td>Room No.</td>
+                        <td>210</td>
+                    </tr>
+                    <tr>
+                        <td>Case</td>
+                        <td>Ezyness</td>
+                        <td>Gender</td>
+                        <td>Male</td>
+                    </tr>
+                    <tr>
+                        <td>Price</td>
+                        <td colSpan="3">500.00</td>
+                    </tr>
+                </tbody>
             </table>
 
             {/* QR Code Section */}
