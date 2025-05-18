@@ -19,7 +19,14 @@ const Home = () => {
     // Handling Ticket Form
     const handleTicketGenerate = (e) => {
         e.preventDefault();
-        console.log("Handle Ticket Generate Function Clicked!!!");
+        const form = e.target;
+        const name = form.name.value;
+        const age = form.age.value;
+        const department = form.department.value;
+        const patientCase = form.case.value;
+        const gender = form.gender.value;
+        const ticketInfo = { name, age, department, patientCase, gender };
+        console.log(ticketInfo);
     }
 
     return (
@@ -107,7 +114,7 @@ const Home = () => {
                         <h1 className="text-lg font-semibold">Download or Print Ticket</h1>
                         <Ticket></Ticket>
                         <div>
-                            <button className="btn bg-[#275596] mt-2 text-white w-full">Print</button>
+                            <button type="submit" className="btn bg-[#275596] mt-2 text-white w-full">Print</button>
                         </div>
                     </div>
                 </div>
