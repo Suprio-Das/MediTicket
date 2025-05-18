@@ -27,6 +27,8 @@ const Home = () => {
         const department = form.department.value;
         const patientCase = form.case.value;
         const gender = form.gender.value;
+        const price = 500;
+        defaultRegNo++;
 
         // Getting Current Date and Time
         const d = new Date();
@@ -35,11 +37,9 @@ const Home = () => {
         const day = d.getDate();
         const fullDate = `${year}-${month}-${day}`;
 
-        defaultRegNo++;
-
         const ticketInfo = { name, age, department, patientCase, gender };
 
-        console.log(defaultRegNo, fullDate);
+        console.log(d.getTime(), defaultRegNo, fullDate);
     }
 
     return (
