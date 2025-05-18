@@ -45,7 +45,7 @@ const Home = () => {
                             </fieldset>
                             <fieldset className="fieldset">
                                 <legend className="fieldset-legend">Enter Patient Age</legend>
-                                <input type="text" className="input w-full outline-1" placeholder="Type Patient Age here" name="age" />
+                                <input type="number" className="input w-full outline-1" placeholder="Type Patient Age here" name="age" />
                             </fieldset>
                             {/* Patient Name and Age------------------------------------------------------------------ */}
 
