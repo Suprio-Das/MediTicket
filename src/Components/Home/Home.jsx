@@ -39,9 +39,9 @@ const Home = () => {
         const fullDate = `${year}-${month}-${day}`;
         const ticketTime = moment().format('MMMM Do YYYY, h:mm:ss a');
 
-        const ticketInfo = { name, age, department, patientCase, gender };
+        const ticketInfo = { defaultRegNo, name, age, department, patientCase, gender, price, fullDate, ticketTime };
 
-        console.log(defaultRegNo, fullDate, ticketTime);
+        console.log(ticketInfo);
     }
 
     return (
