@@ -16,6 +16,8 @@ const Home = () => {
         }
     ];
 
+    let defaultRegNo = 202505191234; // 2025-Year, 05-Day, 19-Month, 1234-random number
+
     // Handling Ticket Form
     const handleTicketGenerate = (e) => {
         e.preventDefault();
@@ -25,8 +27,19 @@ const Home = () => {
         const department = form.department.value;
         const patientCase = form.case.value;
         const gender = form.gender.value;
+
+        // Getting Current Date and Time
+        const d = new Date();
+        const year = d.getFullYear();
+        const month = d.getMonth() + 1;
+        const day = d.getDate();
+        const fullDate = `${year}-${month}-${day}`;
+
+        defaultRegNo++;
+
         const ticketInfo = { name, age, department, patientCase, gender };
-        console.log(ticketInfo);
+
+        console.log(defaultRegNo, fullDate);
     }
 
     return (
