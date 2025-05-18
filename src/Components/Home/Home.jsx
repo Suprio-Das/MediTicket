@@ -2,6 +2,7 @@ import Marquee from "react-fast-marquee";
 import TicketLottie from '../../assets/Ticket-Lottie.json'
 import Lottie from "lottie-react";
 import Ticket from "./Ticket";
+import moment from "moment";
 
 const Home = () => {
     const dummyNotice = [
@@ -36,10 +37,11 @@ const Home = () => {
         const month = d.getMonth() + 1;
         const day = d.getDate();
         const fullDate = `${year}-${month}-${day}`;
+        const ticketTime = moment().format('MMMM Do YYYY, h:mm:ss a');
 
         const ticketInfo = { name, age, department, patientCase, gender };
 
-        console.log(d.getTime(), defaultRegNo, fullDate);
+        console.log(defaultRegNo, fullDate, ticketTime);
     }
 
     return (
