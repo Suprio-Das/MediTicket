@@ -1,7 +1,8 @@
 import MediTicketLogo from '../../assets/MediTicketFavicon.png'
 import TicketQR from '../../assets/qrcode.png'
 
-const Ticket = ({ regNo, name, age, department, patientCase, gender, price, fullDate, ticketTime }) => {
+const Ticket = ({ ticket }) => {
+    const { regNo, name, age, department, room, patientCase, gender, price, fullDate, ticketTime } = ticket
     return (
         <div className='border-1 p-3 rounded-xs mt-5'>
             {/* Header Section */}
@@ -40,13 +41,13 @@ const Ticket = ({ regNo, name, age, department, patientCase, gender, price, full
                         <td>Department</td>
                         <td>{department}</td>
                         <td>Room No.</td>
-                        <td>210</td>
+                        <td>{room}</td>
                     </tr>
                     <tr>
                         <td>Case</td>
-                        <td>Ezyness</td>
+                        <td>{patientCase}</td>
                         <td>Gender</td>
-                        <td>Male</td>
+                        <td>{gender}</td>
                     </tr>
                     <tr>
                         <td>Price</td>
