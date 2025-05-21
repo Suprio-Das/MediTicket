@@ -3,8 +3,11 @@ import TicketLottie from '../../assets/Ticket-Lottie.json'
 import Lottie from "lottie-react";
 import Ticket from "./Ticket";
 import moment from "moment";
+import { useState } from "react";
 
 const Home = () => {
+    const [ticket, setTicket] = useState({});
+
     const dummyNotice = [
         {
             name: "The seat limit of Dengue Department is full. For emergency, contact MediTicket office."
@@ -17,7 +20,7 @@ const Home = () => {
         }
     ];
 
-    let defaultRegNo = 202505191234; // 2025-Year, 05-Day, 19-Month, 1234-random number
+    let defaultRegNo = '202505191234'; // 2025-Year, 05-Day, 19-Month, 1234-random number
 
     // Handling Ticket Form
     const handleTicketGenerate = (e) => {
@@ -29,7 +32,6 @@ const Home = () => {
         const patientCase = form.case.value;
         const gender = form.gender.value;
         const price = 500;
-        defaultRegNo++;
 
         // Getting Current Date and Time
         const d = new Date();
@@ -39,11 +41,15 @@ const Home = () => {
         const fullDate = `${year}-${month}-${day}`;
         const ticketTime = moment().format('MMMM Do YYYY, h:mm:ss a');
 
-        const ticketInfo = { defaultRegNo, name, age, department, patientCase, gender, price, fullDate, ticketTime };
+        // Reg no. from date
+        const incDay = day + 1;
+        const regNo = `${year}${month}${incDay}`
 
-        console.log(ticketInfo);
+        const ticketInfo = { regNo, name, age, department, patientCase, gender, price, fullDate, ticketTime };
+
+        setTicket(ticketInfo);
     }
-
+    console.log(ticket);
     return (
         <div>
             {/* Notice Board */}
@@ -127,7 +133,7 @@ const Home = () => {
                     {/* Ticket Print */}
                     <div className="col-span-1 border-l-2 p-5">
                         <h1 className="text-lg font-semibold">Download or Print Ticket</h1>
-                        <Ticket></Ticket>
+                        <Ticket ticket={ticket}></Ticket>
                         <div>
                             <button type="submit" className="btn bg-[#275596] mt-2 text-white w-full">Print</button>
                         </div>

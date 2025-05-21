@@ -1,7 +1,8 @@
 import MediTicketLogo from '../../assets/MediTicketFavicon.png'
 import TicketQR from '../../assets/qrcode.png'
 
-const Ticket = () => {
+const Ticket = ({ ticket }) => {
+    console.log("Table: ", ticket);
     return (
         <div className='border-1 p-3 rounded-xs mt-5'>
             {/* Header Section */}
