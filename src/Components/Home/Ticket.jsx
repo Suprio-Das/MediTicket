@@ -26,19 +26,19 @@ const Ticket = ({ regNo, name, age, department, patientCase, gender, price, full
                 <tbody>
                     <tr>
                         <td>Reg No.</td>
-                        <td>123444444444</td>
+                        <td>{regNo}</td>
                         <td>Date</td>
-                        <td>2025-05.17</td>
+                        <td>{fullDate}</td>
                     </tr>
                     <tr>
                         <td>Name</td>
-                        <td>Suprio Das</td>
+                        <td>{name}</td>
                         <td>Age</td>
-                        <td>23</td>
+                        <td>{age}</td>
                     </tr>
                     <tr>
                         <td>Department</td>
-                        <td>Eye</td>
+                        <td>{department}</td>
                         <td>Room No.</td>
                         <td>210</td>
                     </tr>
