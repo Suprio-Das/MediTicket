@@ -31,6 +31,7 @@ const Home = () => {
         const department = form.department.value;
         const patientCase = form.case.value;
         const gender = form.gender.value;
+        const room = form.room.value;
         const price = 500;
 
         // Getting Current Date and Time
@@ -45,7 +46,7 @@ const Home = () => {
         const incDay = day + 1;
         const regNo = `${year}${month}${incDay}`
 
-        const ticketInfo = { regNo, name, age, department, patientCase, gender, price, fullDate, ticketTime };
+        const ticketInfo = { regNo, name, age, department, room, patientCase, gender, price, fullDate, ticketTime };
 
         setTicket(ticketInfo);
     }
