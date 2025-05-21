@@ -51,7 +51,7 @@ const Ticket = ({ ticket }) => {
                     </tr>
                     <tr>
                         <td>Price</td>
-                        <td colSpan="3">500.00</td>
+                        <td colSpan="3">{price}</td>
                     </tr>
                 </tbody>
             </table>
@@ -64,7 +64,7 @@ const Ticket = ({ ticket }) => {
             {/* Footer */}
             <div>
                 <p className='text-xs text-center'>N:B: Kindly preserve this slip for future visits.</p>
-                <p className='text-xs text-center'>2025-May-17 10:00:00 PM</p>
+                <p className='text-xs text-center'>{ticketTime}</p>
                 <p className='text-xs text-center'>Developed and Maintained by Suprio Das</p>
             </div>
         </div>
