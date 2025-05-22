@@ -7,7 +7,7 @@ import moment from "moment";
 import { useState } from "react";
 
 const Home = () => {
-    const [ticket, setTicket] = useState({});
+    const [ticket, setTicket] = useState(null);
 
     const dummyNotice = [
         {
@@ -20,8 +20,6 @@ const Home = () => {
             name: "Apply as Nurse - There are open vacancies in Medicine Department."
         }
     ];
-
-    let defaultRegNo = '202505191234'; // 2025-Year, 05-Day, 19-Month, 1234-random number
 
     // Handling Ticket Form
     const handleTicketGenerate = (e) => {
