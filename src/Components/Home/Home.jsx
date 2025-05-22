@@ -139,7 +139,7 @@ const Home = () => {
                             ticket.length > 0 ? <Ticket ticket={ticket}></Ticket> : <span><Lottie animationData={DataLoadingLottie}></Lottie></span>
                         }
                         <div>
-                            <button type="submit" className="btn bg-[#275596] mt-2 text-white w-full">Print</button>
+                            <button type="submit" className={`btn bg-[#275596] mt-2 text-white w-full ${ticket.length > 0 ? 'block' : 'hidden'}`}>Print</button>
                         </div>
                     </div>
                 </div>
