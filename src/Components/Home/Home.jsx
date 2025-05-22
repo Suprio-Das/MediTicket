@@ -136,10 +136,10 @@ const Home = () => {
                     <div className="col-span-1 border-l-2 p-5">
                         <h1 className="text-lg font-semibold">Download or Print Ticket</h1>
                         {
-                            ticket.length > 0 ? <Ticket ticket={ticket}></Ticket> : <span><Lottie animationData={DataLoadingLottie}></Lottie></span>
+                            ticket ? <Ticket ticket={ticket}></Ticket> : <span><Lottie animationData={DataLoadingLottie}></Lottie></span>
                         }
                         <div>
-                            <button type="submit" className={`btn bg-[#275596] mt-2 text-white w-full ${ticket.length > 0 ? 'block' : 'hidden'}`}>Print</button>
+                            <button type="submit" className={`btn bg-[#275596] mt-2 text-white w-full ${ticket ? 'block' : 'hidden'}`}>Print</button>
                         </div>
                     </div>
                 </div>
