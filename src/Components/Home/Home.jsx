@@ -76,18 +76,18 @@ const Home = () => {
                             {/* Patient Name and Age----------------------------------------------------------------- */}
                             <fieldset className="fieldset">
                                 <legend className="fieldset-legend">Enter Patient Name</legend>
-                                <input type="text" className="input w-full outline-1" placeholder="Type Patient Name here" name="name" />
+                                <input type="text" className="input w-full outline-1" placeholder="Type Patient Name here" name="name" required />
                             </fieldset>
                             <fieldset className="fieldset">
                                 <legend className="fieldset-legend">Enter Patient Age</legend>
-                                <input type="number" className="input w-full outline-1" placeholder="Type Patient Age here" name="age" />
+                                <input type="number" className="input w-full outline-1" placeholder="Type Patient Age here" name="age" required />
                             </fieldset>
                             {/* Patient Name and Age------------------------------------------------------------------ */}
 
                             {/* Department and Room No.----------------------------------------------------------------- */}
                             <fieldset className="fieldset">
                                 <legend className="fieldset-legend">Select Department</legend>
-                                <select defaultValue="Select a Department" className="select w-full outline-1" name="department">
+                                <select defaultValue="Select a Department" className="select w-full outline-1" name="department" required>
                                     <option disabled={true}>Select a Department</option>
                                     <option>Medicine</option>
                                     <option>Skin</option>
@@ -99,7 +99,7 @@ const Home = () => {
                             </fieldset>
                             <fieldset className="fieldset">
                                 <legend className="fieldset-legend">Select Room No.</legend>
-                                <select defaultValue="Select a Room" className="select w-full outline-1" name="room">
+                                <select defaultValue="Select a Room" className="select w-full outline-1" name="room" required>
                                     <option disabled={true}>Select a Room</option>
                                     <option>101-M</option>
                                     <option>201-S</option>
@@ -114,11 +114,11 @@ const Home = () => {
                             {/* Patient Case and Gender--------------------------------------------------------------- */}
                             <fieldset className="fieldset">
                                 <legend className="fieldset-legend">Enter Patient Case</legend>
-                                <input type="text" className="input w-full outline-1" placeholder="Type Patient Case here" name="case" />
+                                <input type="text" className="input w-full outline-1" placeholder="Type Patient Case here" name="case" required />
                             </fieldset>
                             <fieldset className="fieldset">
                                 <legend className="fieldset-legend">Select Gender</legend>
-                                <select defaultValue="Select a Gender" className="select w-full outline-1" name="gender">
+                                <select defaultValue="Select a Gender" className="select w-full outline-1" name="gender" required>
                                     <option disabled={true}>Select a Gender</option>
                                     <option>Male</option>
                                     <option>Female</option>
