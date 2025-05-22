@@ -1,5 +1,6 @@
 import Marquee from "react-fast-marquee";
 import TicketLottie from '../../assets/Ticket-Lottie.json'
+import DataLoadingLottie from '../../assets/DataLoading.json'
 import Lottie from "lottie-react";
 import Ticket from "./Ticket";
 import moment from "moment";
@@ -134,7 +135,9 @@ const Home = () => {
                     {/* Ticket Print */}
                     <div className="col-span-1 border-l-2 p-5">
                         <h1 className="text-lg font-semibold">Download or Print Ticket</h1>
-                        <Ticket ticket={ticket}></Ticket>
+                        {
+                            ticket.length > 0 ? <Ticket ticket={ticket}></Ticket> : <span><Lottie animationData={DataLoadingLottie}></Lottie></span>
+                        }
                         <div>
                             <button type="submit" className="btn bg-[#275596] mt-2 text-white w-full">Print</button>
                         </div>
