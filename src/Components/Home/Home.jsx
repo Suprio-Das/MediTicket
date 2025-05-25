@@ -45,9 +45,20 @@ const Home = () => {
         const incDay = day + 1;
         const regNo = `${year}${month}${incDay}`
 
-        const ticketInfo = { regNo, name, age, department, room, patientCase, gender, price, fullDate, ticketTime };
+        const ticketInfo = { name, age, department, room, patientCase, gender, price, fullDate, ticketTime };
 
         setTicket(ticketInfo);
+
+        // Sending Ticket data to server
+        fetch('http://localhost:5000/tickets', {
+            method: "POST",
+            headers: {
+                "content-type": "application/json"
+            },
+            body: JSON.stringify(ticketInfo)
+        })
+            .then(res => res.json())
+            .then(result => console.log(result));
     }
     console.log(ticket);
     return (
