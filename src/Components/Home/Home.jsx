@@ -105,7 +105,7 @@ const Home = () => {
                                     <option>201-S</option>
                                     <option>202-E</option>
                                     <option>203-D</option>
-                                    <option>301-D</option>
+                                    <option>301-Di</option>
                                     <option>401-N</option>
                                 </select>
                             </fieldset>
