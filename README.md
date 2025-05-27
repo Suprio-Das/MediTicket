@@ -12,3 +12,4 @@ MediTicket is a medical ticket managing website from where tickets for specific 
 1. Tailwind CSS
 2. DaisyUI
 3. React JS
+4. Moment.Js
