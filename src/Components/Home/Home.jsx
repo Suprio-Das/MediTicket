@@ -41,10 +41,6 @@ const Home = () => {
         const fullDate = `${year}-${month}-${day}`;
         const ticketTime = moment().format('MMMM Do YYYY, h:mm:ss a');
 
-        // Reg no. from date
-        const incDay = day + 1;
-        const regNo = `${year}${month}${incDay}`
-
         const ticketInfo = { name, age, department, room, patientCase, gender, price, fullDate, ticketTime };
 
         setTicket(ticketInfo);
