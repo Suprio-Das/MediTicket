@@ -4,7 +4,7 @@ import DataLoadingLottie from '../../assets/DataLoading.json'
 import Lottie from "lottie-react";
 import Ticket from "./Ticket";
 import moment from "moment";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Home = () => {
     const [ticket, setTicket] = useState(null);
@@ -21,6 +21,15 @@ const Home = () => {
             name: "Apply as Nurse - There are open vacancies in Medicine Department."
         }
     ];
+
+    useEffect(() => {
+        // fetching current rooms capacity
+        fetch('http://localhost:5000/rooms')
+            .then(res => res.json())
+            .then(data => setRooms(data[0]))
+    }, [ticket])
+
+    //console.log(rooms);
 
     // Handling Ticket Form
     const handleTicketGenerate = (e) => {
@@ -42,13 +51,21 @@ const Home = () => {
         const fullDate = `${year}-${month}-${day}`;
         const ticketTime = moment().format('MMMM Do YYYY, h:mm:ss a');
 
-        // fetching current rooms capacity
-        fetch('http://localhost:5000/rooms')
-            .then(res => res.json())
-            .then(data => setRooms(data[0]))
+        if (room[room.length - 1] === 'M') {
+            const roomCapacityString = rooms.Medicine;
+            const roomCapacity = parseInt(roomCapacityString);
+            const currentCapacity = roomCapacity - 1;
+            const updatedRoomCapcity = {
+                Medicine: currentCapacity,
+                Skin: rooms.Skin,
+                Eye: rooms.Eye,
+                Dental: rooms.Dental,
+                Dialysis: rooms.Dialysis,
+                NeuroMedicine: rooms.NeuroMedicine
+            }
 
-        console.log(rooms);
-
+            console.log(updatedRoomCapcity);
+        }
         const ticketInfo = { name, age, department, room, patientCase, gender, price, fullDate, ticketTime };
 
         setTicket(ticketInfo);
@@ -64,7 +81,7 @@ const Home = () => {
             .then(res => res.json())
             .then(result => console.log(result));
     }
-    console.log(ticket);
+    //console.log(ticket);
     return (
         <div>
             {/* Notice Board */}
