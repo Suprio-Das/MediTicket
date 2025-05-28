@@ -45,7 +45,9 @@ const Home = () => {
         // fetching current rooms capacity
         fetch('http://localhost:5000/rooms')
             .then(res => res.json())
-            .then(data => console.log(data))
+            .then(data => setRooms(data[0]))
+
+        console.log(rooms);
 
         const ticketInfo = { name, age, department, room, patientCase, gender, price, fullDate, ticketTime };
 
