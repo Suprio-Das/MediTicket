@@ -8,6 +8,7 @@ import { useState } from "react";
 
 const Home = () => {
     const [ticket, setTicket] = useState(null);
+    const [rooms, setRooms] = useState(null);
 
     const dummyNotice = [
         {
@@ -40,6 +41,11 @@ const Home = () => {
         const day = d.getDate();
         const fullDate = `${year}-${month}-${day}`;
         const ticketTime = moment().format('MMMM Do YYYY, h:mm:ss a');
+
+        // fetching current rooms capacity
+        fetch('http://localhost:5000/rooms')
+            .then(res => res.json())
+            .then(data => console.log(data))
 
         const ticketInfo = { name, age, department, room, patientCase, gender, price, fullDate, ticketTime };
 
