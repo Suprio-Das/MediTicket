@@ -276,7 +276,6 @@ const Home = () => {
                             >
                                 Generate Ticket
                             </button>
-
                         </form>
                     </div>
                     {/* Ticket Print */}
