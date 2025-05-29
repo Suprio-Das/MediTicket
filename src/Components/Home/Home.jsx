@@ -51,6 +51,7 @@ const Home = () => {
         const fullDate = `${year}-${month}-${day}`;
         const ticketTime = moment().format('MMMM Do YYYY, h:mm:ss a');
 
+        // Room Capacity Update
         if (room[room.length - 1] === 'M') {
             const roomCapacityString = rooms.Medicine;
             const roomCapacity = parseInt(roomCapacityString);
@@ -183,8 +184,6 @@ const Home = () => {
             },
             body: JSON.stringify(ticketInfo)
         })
-            .then(res => res.json())
-            .then(result => console.log(result));
     }
     //console.log(ticket);
     return (
@@ -238,12 +237,12 @@ const Home = () => {
                                 <legend className="fieldset-legend">Select Room No.</legend>
                                 <select defaultValue="Select a Room" className="select w-full outline-1" name="room" required>
                                     <option disabled={true}>Select a Room</option>
-                                    <option>101-M</option>
-                                    <option>201-S</option>
-                                    <option>202-E</option>
-                                    <option>203-D</option>
-                                    <option>301-Di</option>
-                                    <option>401-N</option>
+                                    <option disabled={rooms?.Medicine <= 0}>101-M</option>
+                                    <option disabled={rooms?.Skin <= 0}>201-S</option>
+                                    <option disabled={rooms?.Eye <= 0}>202-E</option>
+                                    <option disabled={rooms?.Dental <= 0}>203-D</option>
+                                    <option disabled={rooms?.Dialysis <= 0}>301-Di</option>
+                                    <option disabled={rooms?.NeuroMedicine <= 0}>401-N</option>
                                 </select>
                             </fieldset>
                             {/* Patient Name and Age------------------------------------------------------------------ */}
