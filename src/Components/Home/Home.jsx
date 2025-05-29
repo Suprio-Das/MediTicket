@@ -63,8 +63,13 @@ const Home = () => {
                 Dialysis: rooms.Dialysis,
                 NeuroMedicine: rooms.NeuroMedicine
             }
-
-            console.log(updatedRoomCapcity);
+            fetch('http://localhost:5000/rooms', {
+                method: "PUT",
+                headers: {
+                    "content-type": "application/json"
+                },
+                body: JSON.stringify(updatedRoomCapcity)
+            })
         }
         const ticketInfo = { name, age, department, room, patientCase, gender, price, fullDate, ticketTime };
 
