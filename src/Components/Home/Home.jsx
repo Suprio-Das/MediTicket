@@ -263,7 +263,20 @@ const Home = () => {
                             </fieldset>
                             {/* Patient Case and Gender--------------------------------------------------------------- */}
 
-                            <button className="btn bg-[#275596] text-white font-normal col-span-2">Generate Ticket</button>
+                            <button
+                                disabled={
+                                    rooms?.Medicine <= 0 &&
+                                    rooms?.Skin <= 0 &&
+                                    rooms?.Eye <= 0 &&
+                                    rooms?.Dental <= 0 &&
+                                    rooms?.Dialysis <= 0 &&
+                                    rooms?.NeuroMedicine <= 0
+                                }
+                                className="btn bg-[#275596] text-white font-normal col-span-2"
+                            >
+                                Generate Ticket
+                            </button>
+
                         </form>
                     </div>
                     {/* Ticket Print */}
