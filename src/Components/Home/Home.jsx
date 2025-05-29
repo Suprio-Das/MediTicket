@@ -9,6 +9,7 @@ import { useEffect, useState } from "react";
 const Home = () => {
     const [ticket, setTicket] = useState(null);
     const [rooms, setRooms] = useState(null);
+    const [newTicket, setNewTicket] = useState(null);
 
     const dummyNotice = [
         {
@@ -184,6 +185,8 @@ const Home = () => {
             },
             body: JSON.stringify(ticketInfo)
         })
+            .then(res => res.json())
+            .then(data => setNewTicket(data))
     }
     //console.log(ticket);
     return (
@@ -282,7 +285,7 @@ const Home = () => {
                     <div className="col-span-1 border-l-2 p-5">
                         <h1 className="text-lg font-semibold">Download or Print Ticket</h1>
                         {
-                            ticket ? <Ticket ticket={ticket}></Ticket> : <span><Lottie animationData={DataLoadingLottie}></Lottie></span>
+                            newTicket ? <Ticket ticket={newTicket}></Ticket> : <span><Lottie animationData={DataLoadingLottie}></Lottie></span>
                         }
                         <div>
                             <button type="submit" className={`btn bg-[#275596] mt-2 text-white w-full ${ticket ? 'block' : 'hidden'}`}>Print</button>
