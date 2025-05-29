@@ -131,6 +131,26 @@ const Home = () => {
                 body: JSON.stringify(updatedRoomCapcity)
             })
         }
+        else if (room[room.length - 1] === 'Di') {
+            const roomCapacityString = rooms.Dialysis;
+            const roomCapacity = parseInt(roomCapacityString);
+            const currentCapacity = roomCapacity - 1;
+            const updatedRoomCapcity = {
+                Medicine: rooms.Medicine,
+                Skin: rooms.Skin,
+                Eye: rooms.Eye,
+                Dental: rooms.Dental,
+                Dialysis: currentCapacity,
+                NeuroMedicine: rooms.NeuroMedicine
+            }
+            fetch('http://localhost:5000/rooms', {
+                method: "PUT",
+                headers: {
+                    "content-type": "application/json"
+                },
+                body: JSON.stringify(updatedRoomCapcity)
+            })
+        }
         const ticketInfo = { name, age, department, room, patientCase, gender, price, fullDate, ticketTime };
 
         setTicket(ticketInfo);
