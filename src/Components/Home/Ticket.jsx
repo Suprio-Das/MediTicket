@@ -3,6 +3,10 @@ import TicketQR from '../../assets/qrcode.png'
 
 const Ticket = ({ newTicket }) => {
     const { regNo, name, age, department, room, patientCase, gender, price, fullDate, ticketTime } = newTicket;
+    // Export ticket as PDF
+    const exportTicket = () => {
+        console.log(regNo);
+    }
     return (
         <div>
             <div className='border-1 p-3 rounded-xs mt-5'>
@@ -70,7 +74,7 @@ const Ticket = ({ newTicket }) => {
                 </div>
             </div>
             <div>
-                <button type="submit" className={`btn bg-[#275596] mt-2 text-white w-full ${newTicket ? 'block' : 'hidden'}`}>Print</button>
+                <button onClick={exportTicket} className={`btn bg-[#275596] mt-2 text-white w-full ${newTicket ? 'block' : 'hidden'}`}>Print</button>
             </div>
         </div>
     );
