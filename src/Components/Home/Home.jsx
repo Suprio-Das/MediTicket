@@ -188,7 +188,6 @@ const Home = () => {
             .then(res => res.json())
             .then(data => setNewTicket(data))
     }
-    //console.log(ticket);
     return (
         <div>
             {/* Notice Board */}
@@ -285,11 +284,8 @@ const Home = () => {
                     <div className="col-span-1 border-l-2 p-5">
                         <h1 className="text-lg font-semibold">Download or Print Ticket</h1>
                         {
-                            newTicket ? <Ticket ticket={newTicket}></Ticket> : <span><Lottie animationData={DataLoadingLottie}></Lottie></span>
+                            newTicket ? <Ticket newTicket={newTicket}></Ticket> : <span><Lottie animationData={DataLoadingLottie}></Lottie></span>
                         }
-                        <div>
-                            <button type="submit" className={`btn bg-[#275596] mt-2 text-white w-full ${ticket ? 'block' : 'hidden'}`}>Print</button>
-                        </div>
                     </div>
                 </div>
             </section>
