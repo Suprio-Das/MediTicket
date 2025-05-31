@@ -1,3 +1,4 @@
+import html2pdf from 'html2pdf.js';
 import MediTicketLogo from '../../assets/MediTicketFavicon.png'
 import TicketQR from '../../assets/qrcode.png'
 
@@ -5,11 +6,24 @@ const Ticket = ({ newTicket }) => {
     const { regNo, name, age, department, room, patientCase, gender, price, fullDate, ticketTime } = newTicket;
     // Export ticket as PDF
     const exportTicket = () => {
-        console.log(regNo);
+        var element = document.getElementById('ticket');
+        var opt = {
+            margin: 1,
+            filename: `${regNo}.pdf`,
+            image: { type: 'jpeg', quality: 0.98 },
+            html2canvas: { scale: 2 },
+            jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' }
+        };
+
+        // New Promise-based usage:
+        html2pdf().from(element).set(opt).save();
+
+        // Old monolithic-style usage:
+        html2pdf(element, opt);
     }
     return (
         <div>
-            <div className='border-1 p-3 rounded-xs mt-5'>
+            <div className='border-1 p-3 rounded-xs mt-5' id='ticket'>
                 {/* Header Section */}
                 <div className='flex justify-between items-center'>
                     <div>
