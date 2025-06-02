@@ -12,10 +12,7 @@ MediTicket is a medical ticket managing website from where tickets for specific 
 1. Tailwind CSS
 2. DaisyUI
 3. React JS
-<<<<<<< HEAD
 4. Moment JS
 5. Lottie Animated Icons
-=======
-4. Moment.Js
-5. Lottie Animated Icons
->>>>>>> b4bba6785028e9af6c2d5b85734570538256921c
+6. Moment.Js
+7. Lottie Animated Icons
