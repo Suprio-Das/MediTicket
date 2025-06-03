@@ -23,3 +23,11 @@ td {
     padding: 1%;
     text-align: center;
 }
+
+/* Login Page */
+.login {
+    background-image: url('../src/assets/bgImg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}

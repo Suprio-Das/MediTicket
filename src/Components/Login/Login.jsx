@@ -1,17 +1,24 @@
 import Lottie from 'lottie-react';
-import loginLottie from '../../assets/LoginLottie.json';
+import Logo from '../../assets/MediTicket.png';
 const Login = () => {
     return (
-        <div className='min-h-[calc(100vh-85px)] flex items-center justify-center'>
-            <div className='grid grid-cols-1 lg:grid-cols-2 items-center'>
-                {/* Lottie Animation */}
-                <div>
-                    <Lottie animationData={loginLottie} className='w-[500px]'></Lottie>
-                </div>
-                {/* Login Form */}
-                <div>
-                    <h1>Login Form</h1>
-                </div>
+        <div className='min-h-[calc(100vh-120px)] flex items-center justify-center login'>
+            <div className='w-2/5 border-1 p-5 rounded-sm bg-white'>
+                <h2 className='text-center text-md font-semibold flex flex-col items-center'>
+                    Login to
+                    <span><img src={Logo} alt="MediTicket Logo" className='w-42' /></span>
+                </h2>
+                <form>
+                    <fieldset className="fieldset">
+                        <legend className="fieldset-legend">Email</legend>
+                        <input type="text" className="input w-full" placeholder="Enter email..." />
+                    </fieldset>
+                    <fieldset className="fieldset">
+                        <legend className="fieldset-legend">Password</legend>
+                        <input type="password" className="input w-full" placeholder="Type password..." />
+                    </fieldset>
+                    <input type="submit" className='btn w-full mt-2 bg-[#275596] text-white' value="Login" />
+                </form>
             </div>
         </div>
     );
