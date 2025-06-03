@@ -6,7 +6,10 @@ import { IoLocation } from "react-icons/io5";
 import { useContext } from 'react';
 import AuthContext from '../Context/AuthContext';
 const Navbar = () => {
-    const { user } = useContext(AuthContext);
+    const { user, handleSignOut } = useContext(AuthContext);
+    const handleLogOut = () => {
+        handleSignOut()
+    }
     return (
         <div>
             <div className='bg-[#275596] p-2 md:flex justify-center gap-5 text-neutral-200'>
@@ -41,7 +44,7 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-end">
                     {
-                        user ? <Link className="btn bg-[#275596] text-white">Logout</Link> : <Link className="btn bg-[#275596] text-white">Login</Link>
+                        user ? <Link onClick={handleLogOut} className="btn bg-[#275596] text-white">Logout</Link> : <Link className="btn bg-[#275596] text-white">Login</Link>
                     }
                 </div>
             </div>
