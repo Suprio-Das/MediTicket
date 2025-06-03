@@ -3,7 +3,7 @@ import loginLottie from '../../assets/LoginLottie.json';
 const Login = () => {
     return (
         <div>
-            <div>
+            <div className='grid grid-cols-1 lg:grid-cols-2 items-center'>
                 {/* Lottie Animation */}
                 <div>
                     <Lottie animationData={loginLottie} className='w-78'></Lottie>
