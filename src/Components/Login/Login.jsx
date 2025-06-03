@@ -3,7 +3,7 @@ import Logo from '../../assets/MediTicket.png';
 const Login = () => {
     return (
         <div className='min-h-[calc(100vh-120px)] flex items-center justify-center login'>
-            <div className='w-2/5 border-1 p-5 rounded-sm bg-white'>
+            <div className='lg:w-2/5 w-[95%] border-1 p-5 rounded-sm bg-white'>
                 <h2 className='text-center text-md font-semibold flex flex-col items-center'>
                     Login to
                     <span><img src={Logo} alt="MediTicket Logo" className='w-42' /></span>
