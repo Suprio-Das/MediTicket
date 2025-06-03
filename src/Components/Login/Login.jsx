@@ -1,4 +1,3 @@
-import Lottie from 'lottie-react';
 import Logo from '../../assets/MediTicket.png';
 const Login = () => {
     return (
