@@ -2,7 +2,7 @@ import Lottie from 'lottie-react';
 import Logo from '../../assets/MediTicket.png';
 const Login = () => {
     return (
-        <div className='min-h-[calc(100vh-120px)] flex items-center justify-center login'>
+        <div className='min-h-[calc(100vh-120px)] flex items-center justify-center login border-t-1 border-[#275596]'>
             <div className='lg:w-2/5 w-[95%] border-1 p-5 rounded-sm bg-white'>
                 <h2 className='text-center text-md font-semibold flex flex-col items-center'>
                     Login to
