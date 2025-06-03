@@ -1,7 +1,8 @@
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import Logo from '../../assets/MediTicket.png';
 import AuthContext from '../Context/AuthContext';
 const Login = () => {
+    const [error, setError] = useState({});
     const { handleLoginWithEmailAndPass } = useContext(AuthContext);
     const handleLogin = (e) => {
         e.preventDefault();
@@ -12,9 +13,10 @@ const Login = () => {
         handleLoginWithEmailAndPass(email, password)
             .then((user) => {
                 console.log(user.user)
+                setError();
             })
             .catch((error) => {
-                console.log(error.message);
+                setError(error.message);
             })
     }
     return (
@@ -34,6 +36,7 @@ const Login = () => {
                         <input type="password" className="input w-full" name='password' placeholder="Type password..." />
                     </fieldset>
                     <input type="submit" className='btn w-full mt-2 bg-[#275596] text-white' value="Login" />
+                    <code className={`text-sm text-center mt-2 text-red-600 ${error ? 'block' : 'hidden'}`}>Wrong Credentials.</code>
                 </form>
             </div>
         </div>
