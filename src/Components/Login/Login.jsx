@@ -1,11 +1,21 @@
+import { useContext } from 'react';
 import Logo from '../../assets/MediTicket.png';
+import AuthContext from '../Context/AuthContext';
 const Login = () => {
+    const { handleLoginWithEmailAndPass } = useContext(AuthContext);
     const handleLogin = (e) => {
         e.preventDefault();
         const form = e.target;
         const email = form.email.value;
         const password = form.password.value;
-        console.table(email, password);
+
+        handleLoginWithEmailAndPass(email, password)
+            .then((user) => {
+                console.log(user.user)
+            })
+            .catch((error) => {
+                console.log(error.message);
+            })
     }
     return (
         <div className='min-h-[calc(100vh-120px)] flex items-center justify-center login border-t-1 border-[#275596]'>
