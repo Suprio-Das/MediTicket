@@ -36,7 +36,7 @@ const Login = () => {
                         <input type="password" className="input w-full" name='password' placeholder="Type password..." />
                     </fieldset>
                     <input type="submit" className='btn w-full mt-2 bg-[#275596] text-white' value="Login" />
-                    <code className={`text-sm text-center mt-2 text-red-600 ${error ? 'block' : 'hidden'}`}>Wrong Credentials.</code>
+                    <code className={`text-sm text-center mt-2 text-red-600 ${error ? 'block' : 'hidden'}`}>Enter valid email or password.</code>
                 </form>
             </div>
         </div>
