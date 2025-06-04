@@ -5,7 +5,6 @@ import Lottie from "lottie-react";
 import Ticket from "./Ticket";
 import moment from "moment";
 import { useEffect, useState } from "react";
-import QRCodeStyling from "qr-code-styling";
 
 const Home = () => {
     const [ticket, setTicket] = useState(null);
@@ -30,8 +29,6 @@ const Home = () => {
             .then(res => res.json())
             .then(data => setRooms(data[0]))
     }, [ticket])
-
-    //console.log(rooms);
 
     // Handling Ticket Form
     const handleTicketGenerate = (e) => {
@@ -177,28 +174,6 @@ const Home = () => {
         const ticketInfo = { name, age, department, room, patientCase, gender, price, fullDate, ticketTime };
 
         setTicket(ticketInfo);
-
-        // Generating QR Code
-        const qrCode = new QRCodeStyling({
-            width: 64,
-            height: 64,
-            type: "svg",
-            data: "https://www.facebook.com/",
-            image: "https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg",
-            dotsOptions: {
-                color: "#4267b2",
-                type: "rounded"
-            },
-            backgroundOptions: {
-                color: "#e9ebee",
-            },
-            imageOptions: {
-                crossOrigin: "anonymous",
-                margin: 20
-            }
-        });
-
-        qrCode.append(document.getElementById("qr_code"));
 
         // Sending Ticket data to server
         fetch('http://localhost:5000/tickets', {

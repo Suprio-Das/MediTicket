@@ -1,7 +1,7 @@
 import html2pdf from 'html2pdf.js';
 import MediTicketLogo from '../../assets/MediTicketFavicon.png'
-import TicketQR from '../../assets/qrcode.png'
 import QRCodeStyling from 'qr-code-styling';
+import { useEffect } from 'react';
 
 const Ticket = ({ newTicket }) => {
     const { regNo, name, age, department, room, patientCase, gender, price, fullDate, ticketTime } = newTicket;
@@ -18,10 +18,30 @@ const Ticket = ({ newTicket }) => {
 
         // New Promise-based usage:
         html2pdf().from(element).set(opt).save();
-
-        // Old monolithic-style usage:
-        html2pdf(element, opt);
+        document.getElementById("qr_code").innerHTML = " ";
     }
+    // Generating QR Code
+    useEffect(() => {
+        const qrCode = new QRCodeStyling({
+            width: 64,
+            height: 64,
+            type: "svg",
+            data: "https://www.facebook.com/",
+            dotsOptions: {
+                color: "#4267b2",
+                type: "rounded"
+            },
+            backgroundOptions: {
+                color: "#e9ebee",
+            }
+        });
+
+        const qrContainer = document.getElementById("qr_code");
+        if (qrContainer) {
+            qrContainer.innerHTML = "";
+            qrCode.append(qrContainer);
+        }
+    }, [newTicket]);
     return (
         <div>
             <div className='border-1 p-3 rounded-xs mt-5' id='ticket'>
