@@ -18,7 +18,6 @@ const Ticket = ({ newTicket }) => {
 
         // New Promise-based usage:
         html2pdf().from(element).set(opt).save();
-        document.getElementById("qr_code").innerHTML = " ";
     }
     // Generating QR Code
     useEffect(() => {
