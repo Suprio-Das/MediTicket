@@ -1,6 +1,7 @@
 import html2pdf from 'html2pdf.js';
 import MediTicketLogo from '../../assets/MediTicketFavicon.png'
 import TicketQR from '../../assets/qrcode.png'
+import QRCodeStyling from 'qr-code-styling';
 
 const Ticket = ({ newTicket }) => {
     const { regNo, name, age, department, room, patientCase, gender, price, fullDate, ticketTime } = newTicket;
@@ -76,8 +77,8 @@ const Ticket = ({ newTicket }) => {
                 </table>
 
                 {/* QR Code Section */}
-                <div>
-                    <img src={TicketQR} alt="TicketQR" className='w-16 h-16 mx-auto' />
+                <div id='qr_code' className='my-2 flex justify-center'>
+
                 </div>
 
                 {/* Footer */}
