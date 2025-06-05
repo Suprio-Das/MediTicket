@@ -1,9 +1,13 @@
 import { useContext, useState } from 'react';
 import Logo from '../../assets/MediTicket.png';
 import AuthContext from '../Context/AuthContext';
+import { useLocation, useNavigate } from 'react-router';
 const Login = () => {
     const [error, setError] = useState({});
     const { handleLoginWithEmailAndPass } = useContext(AuthContext);
+    const location = useLocation();
+    const navigate = useNavigate();
+    const from = location.state || '/login'
     const handleLogin = (e) => {
         e.preventDefault();
         const form = e.target;
@@ -12,8 +16,10 @@ const Login = () => {
 
         handleLoginWithEmailAndPass(email, password)
             .then((user) => {
-                console.log(user.user)
-                setError();
+                if (user) {
+                    navigate(from);
+                    setError();
+                }
             })
             .catch((error) => {
                 setError(error.message);
