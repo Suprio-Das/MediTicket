@@ -16,3 +16,5 @@ MediTicket is a medical ticket managing website from where tickets for specific 
 5. Lottie Animated Icons
 6. Moment.Js
 7. Lottie Animated Icons
+8. Html2PDF
+9. QR Code Styling
