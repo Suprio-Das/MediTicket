@@ -1,6 +1,11 @@
 # MediTicket
 MediTicket is a medical ticket managing website from where tickets for specific departments will be sold to the patient. After providing certain information about the patient, an e-ticket will be generated which can be printed and given to the patient.
 <br><br>
+
+### Have a Tour by Log-in
+`Email: admin@mediticket.com`
+`Password: adminmediticket`
+
 ### Features:
 1. Ticket sales based on room capacity and specific time period
 2. Printable e-ticket generation with QR code
@@ -16,3 +21,5 @@ MediTicket is a medical ticket managing website from where tickets for specific 
 5. Lottie Animated Icons
 6. Moment.Js
 7. Lottie Animated Icons
+8. Html2PDF
+9. QR Code Styling
