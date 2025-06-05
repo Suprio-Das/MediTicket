@@ -21,7 +21,7 @@ const router = createBrowserRouter([
                 element: <Login></Login>
             },
             {
-                path: '/verification',
+                path: '/verification/:regNo',
                 element: <TicketVerification></TicketVerification>
             }
         ]
