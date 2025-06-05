@@ -22,16 +22,13 @@ const Ticket = ({ newTicket }) => {
     // Generating QR Code
     useEffect(() => {
         const qrCode = new QRCodeStyling({
-            width: 64,
-            height: 64,
+            width: 70,
+            height: 70,
             type: "svg",
-            data: "https://www.facebook.com/",
+            data: `http://localhost:5173/verification/${regNo}`,
             dotsOptions: {
                 color: "#4267b2",
                 type: "rounded"
-            },
-            backgroundOptions: {
-                color: "#e9ebee",
             }
         });
 
