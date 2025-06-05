@@ -3,6 +3,7 @@ import MainLayout from "../Layout/MainLayout";
 import Home from "../Home/Home";
 import Login from "../Login/Login";
 import PrivateRoutes from "./PrivateRoutes";
+import TicketVerification from "../TicketVerification/TicketVerification";
 
 const router = createBrowserRouter([
     {
@@ -21,7 +22,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/verification',
-                element: <h1>Verification page.</h1>
+                element: <TicketVerification></TicketVerification>
             }
         ]
     }
