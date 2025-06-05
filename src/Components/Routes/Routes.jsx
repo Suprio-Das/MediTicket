@@ -18,6 +18,10 @@ const router = createBrowserRouter([
             {
                 path: '/login',
                 element: <Login></Login>
+            },
+            {
+                path: '/verification',
+                element: <h1>Verification page.</h1>
             }
         ]
     }
