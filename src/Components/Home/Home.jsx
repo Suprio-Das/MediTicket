@@ -185,6 +185,9 @@ const Home = () => {
         })
             .then(res => res.json())
             .then(data => setNewTicket(data))
+
+        // Clearing the Form After Submission
+        form.reset();
     }
     return (
         <div>
