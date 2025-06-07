@@ -17,6 +17,12 @@ const router = createBrowserRouter([
                 </PrivateRoutes>
             },
             {
+                path: '/stats',
+                element: <PrivateRoutes>
+                    <h1>This is stats page.</h1>
+                </PrivateRoutes>
+            },
+            {
                 path: '/login',
                 element: <Login></Login>
             },
