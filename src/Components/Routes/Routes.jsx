@@ -4,6 +4,7 @@ import Home from "../Home/Home";
 import Login from "../Login/Login";
 import PrivateRoutes from "./PrivateRoutes";
 import TicketVerification from "../TicketVerification/TicketVerification";
+import Stats from "../Stats/Stats";
 
 const router = createBrowserRouter([
     {
@@ -19,7 +20,7 @@ const router = createBrowserRouter([
             {
                 path: '/stats',
                 element: <PrivateRoutes>
-                    <h1>This is stats page.</h1>
+                    <Stats></Stats>
                 </PrivateRoutes>
             },
             {
