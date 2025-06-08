@@ -24,6 +24,12 @@ const router = createBrowserRouter([
                 </PrivateRoutes>
             },
             {
+                path: '/doctors',
+                element: <PrivateRoutes>
+                    <h1>This is doctors route.</h1>
+                </PrivateRoutes>
+            },
+            {
                 path: '/login',
                 element: <Login></Login>
             },
