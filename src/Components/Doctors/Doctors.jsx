@@ -1,6 +1,6 @@
 const Doctors = () => {
     return (
-        <div className="w-[95%] mx-auto">
+        <div className="w-[95%] mx-auto doctors">
             <section>
                 {/* Medicine Department */}
                 <h1 className="lg:text-2xl text-xl font-semibold">Medicine Department</h1>
