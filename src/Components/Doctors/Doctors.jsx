@@ -5,7 +5,7 @@ const Doctors = () => {
             <p className="text-center">Our team is made up of caring professionals who deliver high-quality services.</p>
             <section>
                 {/* Medicine Department */}
-                <h1 className="lg:text-2xl text-xl font-semibold">Medicine Department</h1>
+                <h1 className="lg:text-xl text-lg font-semibold">Medicine Department</h1>
                 <div>
                     <div>
 
