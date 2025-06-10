@@ -6,6 +6,7 @@ const Doctors = () => {
             <section>
                 {/* Medicine Department */}
                 <h1 className="lg:text-xl text-lg font-semibold">Medicine Department</h1>
+                <p className="w-[3%] border-b-2 border-blue-800"></p>
                 <div>
                     <div>
 
