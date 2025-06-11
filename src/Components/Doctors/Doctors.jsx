@@ -1,6 +1,5 @@
 import DoctorsData from '../../../public/Doctors.json'
 const Doctors = () => {
-    console.log(DoctorsData)
     return (
         <div className="mx-auto doctors p-5">
             <h1 className="text-center text-3xl font-semibold">Our Doctors</h1>
