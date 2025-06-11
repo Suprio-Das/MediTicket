@@ -1,0 +1,124 @@
+{
+    "departments": {
+        "Medicine": [
+            {
+                "name": "Dr. Md. Anisur Rahman",
+                "degree": "MBBS, FCPS (Medicine)",
+                "chamber": "Popular Diagnostic Center, Dhanmondi",
+                "profile_picture": "https://randomuser.me/api/portraits/men/10.jpg"
+            },
+            {
+                "name": "Dr. Farzana Kabir",
+                "degree": "MBBS, MD (Internal Medicine)",
+                "chamber": "Square Hospital, Panthapath",
+                "profile_picture": "https://randomuser.me/api/portraits/women/11.jpg"
+            },
+            {
+                "name": "Dr. Jahangir Alam",
+                "degree": "MBBS, FCPS (Medicine), MACP (USA)",
+                "chamber": "Labaid Specialized Hospital, Dhanmondi",
+                "profile_picture": "https://randomuser.me/api/portraits/men/12.jpg"
+            }
+        ],
+        "Skin": [
+            {
+                "name": "Dr. Nusrat Jahan",
+                "degree": "MBBS, DDV (BSMMU)",
+                "chamber": "Evercare Hospital, Dhaka",
+                "profile_picture": "https://randomuser.me/api/portraits/women/21.jpg"
+            },
+            {
+                "name": "Dr. Mahmud Hasan",
+                "degree": "MBBS, MD (Dermatology)",
+                "chamber": "Ibn Sina Hospital, Dhanmondi",
+                "profile_picture": "https://randomuser.me/api/portraits/men/22.jpg"
+            },
+            {
+                "name": "Dr. Roksana Akter",
+                "degree": "MBBS, FCPS (Dermatology)",
+                "chamber": "City Hospital, Lalmatia",
+                "profile_picture": "https://randomuser.me/api/portraits/women/23.jpg"
+            }
+        ],
+        "Eye": [
+            {
+                "name": "Dr. Asif Rahman",
+                "degree": "MBBS, MS (Ophthalmology)",
+                "chamber": "Bangladesh Eye Hospital, Dhanmondi",
+                "profile_picture": "https://randomuser.me/api/portraits/men/31.jpg"
+            },
+            {
+                "name": "Dr. Shaila Noor",
+                "degree": "MBBS, DO (DU)",
+                "chamber": "Vision Eye Hospital, Uttara",
+                "profile_picture": "https://randomuser.me/api/portraits/women/32.jpg"
+            },
+            {
+                "name": "Dr. Mohammad Imran",
+                "degree": "MBBS, FCPS (Eye), Fellowship (India)",
+                "chamber": "Ispahani Eye Institute, Farmgate",
+                "profile_picture": "https://randomuser.me/api/portraits/men/33.jpg"
+            }
+        ],
+        "Dental": [
+            {
+                "name": "Dr. Faria Hossain",
+                "degree": "BDS, PGT (Dental Surgery)",
+                "chamber": "SQUARE Dental Clinic, Dhaka",
+                "profile_picture": "https://randomuser.me/api/portraits/women/41.jpg"
+            },
+            {
+                "name": "Dr. Rashedul Islam",
+                "degree": "BDS, FCPS (Oral & Maxillofacial Surgery)",
+                "chamber": "Bangabandhu Sheikh Mujib Medical University",
+                "profile_picture": "https://randomuser.me/api/portraits/men/42.jpg"
+            },
+            {
+                "name": "Dr. Nilufa Sultana",
+                "degree": "BDS, MS (Orthodontics)",
+                "chamber": "United Hospital Dental Unit",
+                "profile_picture": "https://randomuser.me/api/portraits/women/43.jpg"
+            }
+        ],
+        "Dialysis": [
+            {
+                "name": "Dr. Kamal Uddin",
+                "degree": "MBBS, MD (Nephrology)",
+                "chamber": "Kidney Foundation Hospital, Mirpur",
+                "profile_picture": "https://randomuser.me/api/portraits/men/51.jpg"
+            },
+            {
+                "name": "Dr. Arifa Sultana",
+                "degree": "MBBS, FCPS (Nephrology)",
+                "chamber": "BRB Hospitals Limited, Dhaka",
+                "profile_picture": "https://randomuser.me/api/portraits/women/52.jpg"
+            },
+            {
+                "name": "Dr. Moinul Islam",
+                "degree": "MBBS, MD (Nephrology), MRCP (UK)",
+                "chamber": "Anwar Khan Modern Hospital, Dhanmondi",
+                "profile_picture": "https://randomuser.me/api/portraits/men/53.jpg"
+            }
+        ],
+        "Neuro Medicine": [
+            {
+                "name": "Dr. Tasneem Jahan",
+                "degree": "MBBS, MD (Neurology)",
+                "chamber": "National Institute of Neurosciences, Agargaon",
+                "profile_picture": "https://randomuser.me/api/portraits/women/61.jpg"
+            },
+            {
+                "name": "Dr. Shafiul Alam",
+                "degree": "MBBS, FCPS (Neurology)",
+                "chamber": "Dhaka Medical College Hospital",
+                "profile_picture": "https://randomuser.me/api/portraits/men/62.jpg"
+            },
+            {
+                "name": "Dr. Momena Akter",
+                "degree": "MBBS, MD (Neuro Medicine)",
+                "chamber": "Green Life Hospital, Dhaka",
+                "profile_picture": "https://randomuser.me/api/portraits/women/63.jpg"
+            }
+        ]
+    }
+}
