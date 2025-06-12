@@ -9,7 +9,7 @@ const Doctors = () => {
             <section className='mt-5'>
                 <h1 className="lg:text-xl text-lg font-semibold">Medicine Department</h1>
                 <p className="w-[3%] border-b-2 border-blue-800"></p>
-                <div className='my-18 grid grid-cols-3 gap-5'>
+                <div className='my-18 grid lg:grid-cols-3 grid-cols-1 gap-5'>
                     {
                         Medicine.map((doctor, index) => <div className='shadow-md p-2 bg-white relative h-48 border-2 border-[#275596] rounded-xl' key={index}>
                             <div className='absolute -top-14 left-[35%]'>
@@ -28,7 +28,7 @@ const Doctors = () => {
             <section>
                 <h1 className="lg:text-xl text-lg font-semibold">Skin Department</h1>
                 <p className="w-[3%] border-b-2 border-blue-800"></p>
-                <div className='my-18 grid grid-cols-3 gap-5'>
+                <div className='my-18 grid lg:grid-cols-3 grid-cols-1 gap-5'>
                     {
                         Skin.map((doctor, index) => <div className='shadow-md p-2 bg-white relative h-48 border-2 border-[#275596] rounded-xl' key={index}>
                             <div className='absolute -top-14 left-[35%]'>
@@ -47,7 +47,7 @@ const Doctors = () => {
             <section>
                 <h1 className="lg:text-xl text-lg font-semibold">Eye Department</h1>
                 <p className="w-[3%] border-b-2 border-blue-800"></p>
-                <div className='my-18 grid grid-cols-3 gap-5'>
+                <div className='my-18 grid lg:grid-cols-3 grid-cols-1 gap-5'>
                     {
                         Eye.map((doctor, index) => <div className='shadow-md p-2 bg-white relative h-48 border-2 border-[#275596] rounded-xl' key={index}>
                             <div className='absolute -top-14 left-[35%]'>
@@ -66,7 +66,7 @@ const Doctors = () => {
             <section>
                 <h1 className="lg:text-xl text-lg font-semibold">Dental Department</h1>
                 <p className="w-[3%] border-b-2 border-blue-800"></p>
-                <div className='my-18 grid grid-cols-3 gap-5'>
+                <div className='my-18 grid lg:grid-cols-3 grid-cols-1 gap-5'>
                     {
                         Dental.map((doctor, index) => <div className='shadow-md p-2 bg-white relative h-48 border-2 border-[#275596] rounded-xl' key={index}>
                             <div className='absolute -top-14 left-[35%]'>
@@ -85,7 +85,7 @@ const Doctors = () => {
             <section>
                 <h1 className="lg:text-xl text-lg font-semibold">Dialysis Department</h1>
                 <p className="w-[3%] border-b-2 border-blue-800"></p>
-                <div className='my-18 grid grid-cols-3 gap-5'>
+                <div className='my-18 grid lg:grid-cols-3 grid-cols-1 gap-5'>
                     {
                         Dialysis.map((doctor, index) => <div className='shadow-md p-2 bg-white relative h-48 border-2 border-[#275596] rounded-xl' key={index}>
                             <div className='absolute -top-14 left-[35%]'>
@@ -104,7 +104,7 @@ const Doctors = () => {
             <section>
                 <h1 className="lg:text-xl text-lg font-semibold">Neuro Medicine Department</h1>
                 <p className="w-[3%] border-b-2 border-blue-800"></p>
-                <div className='my-18 grid grid-cols-3 gap-5'>
+                <div className='my-18 grid lg:grid-cols-3 grid-cols-1 gap-5'>
                     {
                         NeuroMedicine.map((doctor, index) => <div className='shadow-md p-2 bg-white relative h-48 border-2 border-[#275596] rounded-xl' key={index}>
                             <div className='absolute -top-14 left-[35%]'>
