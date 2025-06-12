@@ -25,7 +25,7 @@ const Navbar = () => {
                         </div>
                         <ul
                             tabIndex={0}
-                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                            className={`${user ? 'menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow' : 'hidden'}`}>
                             <li><NavLink to='/'>Ticket</NavLink></li>
                             <li><NavLink to='/stats'>Stats</NavLink></li>
                             <li><NavLink to='/doctors'>Doctors</NavLink></li>
@@ -36,7 +36,7 @@ const Navbar = () => {
                     </Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1">
+                    <ul className={`${user ? 'menu menu-horizontal px-1' : 'hidden'}`}>
                         <li><NavLink to='/'>Ticket</NavLink></li>
                         <li><NavLink to='/stats'>Stats</NavLink></li>
                         <li><NavLink to='/doctors'>Doctors</NavLink></li>
