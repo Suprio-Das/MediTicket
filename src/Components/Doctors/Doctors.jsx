@@ -9,13 +9,13 @@ const Doctors = () => {
             <section className='mt-5'>
                 <h1 className="lg:text-xl text-lg font-semibold">Medicine Department</h1>
                 <p className="w-[3%] border-b-2 border-blue-800"></p>
-                <div className='my-18 grid lg:grid-cols-3 grid-cols-1 gap-5'>
+                <div className='my-18 grid lg:grid-cols-3 grid-cols-1 lg:gap-5 gap-21'>
                     {
                         Medicine.map((doctor, index) => <div className='shadow-md p-2 bg-white relative h-48 border-2 border-[#275596] rounded-xl' key={index}>
                             <div className='absolute -top-14 left-[35%]'>
                                 <img src={doctor.profile_picture} alt="" className='w-28 h-28 rounded-full border-4 border-[#275596]' />
                             </div>
-                            <div className='text-center mt-18'>
+                            <div className='text-center mt-18 lg:text-base text-sm'>
                                 <p><span className='font-semibold'>Name:</span> {doctor.name}</p>
                                 <p><span className='font-semibold'>Degree:</span> {doctor.degree}</p>
                                 <p><span className='font-semibold'>Chamber:</span> {doctor.chamber}</p>
@@ -28,13 +28,13 @@ const Doctors = () => {
             <section>
                 <h1 className="lg:text-xl text-lg font-semibold">Skin Department</h1>
                 <p className="w-[3%] border-b-2 border-blue-800"></p>
-                <div className='my-18 grid lg:grid-cols-3 grid-cols-1 gap-5'>
+                <div className='my-18 grid lg:grid-cols-3 grid-cols-1 lg:gap-5 gap-21'>
                     {
                         Skin.map((doctor, index) => <div className='shadow-md p-2 bg-white relative h-48 border-2 border-[#275596] rounded-xl' key={index}>
                             <div className='absolute -top-14 left-[35%]'>
                                 <img src={doctor.profile_picture} alt="" className='w-28 h-28 rounded-full border-4 border-[#275596]' />
                             </div>
-                            <div className='text-center mt-18'>
+                            <div className='text-center mt-18 lg:text-base text-sm'>
                                 <p><span className='font-semibold'>Name:</span> {doctor.name}</p>
                                 <p><span className='font-semibold'>Degree:</span> {doctor.degree}</p>
                                 <p><span className='font-semibold'>Chamber:</span> {doctor.chamber}</p>
@@ -47,13 +47,13 @@ const Doctors = () => {
             <section>
                 <h1 className="lg:text-xl text-lg font-semibold">Eye Department</h1>
                 <p className="w-[3%] border-b-2 border-blue-800"></p>
-                <div className='my-18 grid lg:grid-cols-3 grid-cols-1 gap-5'>
+                <div className='my-18 grid lg:grid-cols-3 grid-cols-1 lg:gap-5 gap-21'>
                     {
                         Eye.map((doctor, index) => <div className='shadow-md p-2 bg-white relative h-48 border-2 border-[#275596] rounded-xl' key={index}>
                             <div className='absolute -top-14 left-[35%]'>
                                 <img src={doctor.profile_picture} alt="" className='w-28 h-28 rounded-full border-4 border-[#275596]' />
                             </div>
-                            <div className='text-center mt-18'>
+                            <div className='text-center mt-18 lg:text-base text-sm'>
                                 <p><span className='font-semibold'>Name:</span> {doctor.name}</p>
                                 <p><span className='font-semibold'>Degree:</span> {doctor.degree}</p>
                                 <p><span className='font-semibold'>Chamber:</span> {doctor.chamber}</p>
@@ -66,13 +66,13 @@ const Doctors = () => {
             <section>
                 <h1 className="lg:text-xl text-lg font-semibold">Dental Department</h1>
                 <p className="w-[3%] border-b-2 border-blue-800"></p>
-                <div className='my-18 grid lg:grid-cols-3 grid-cols-1 gap-5'>
+                <div className='my-18 grid lg:grid-cols-3 grid-cols-1 lg:gap-5 gap-21'>
                     {
                         Dental.map((doctor, index) => <div className='shadow-md p-2 bg-white relative h-48 border-2 border-[#275596] rounded-xl' key={index}>
                             <div className='absolute -top-14 left-[35%]'>
                                 <img src={doctor.profile_picture} alt="" className='w-28 h-28 rounded-full border-4 border-[#275596]' />
                             </div>
-                            <div className='text-center mt-18'>
+                            <div className='text-center mt-18 lg:text-base text-sm'>
                                 <p><span className='font-semibold'>Name:</span> {doctor.name}</p>
                                 <p><span className='font-semibold'>Degree:</span> {doctor.degree}</p>
                                 <p><span className='font-semibold'>Chamber:</span> {doctor.chamber}</p>
@@ -85,13 +85,13 @@ const Doctors = () => {
             <section>
                 <h1 className="lg:text-xl text-lg font-semibold">Dialysis Department</h1>
                 <p className="w-[3%] border-b-2 border-blue-800"></p>
-                <div className='my-18 grid lg:grid-cols-3 grid-cols-1 gap-5'>
+                <div className='my-18 grid lg:grid-cols-3 grid-cols-1 lg:gap-5 gap-21'>
                     {
                         Dialysis.map((doctor, index) => <div className='shadow-md p-2 bg-white relative h-48 border-2 border-[#275596] rounded-xl' key={index}>
                             <div className='absolute -top-14 left-[35%]'>
                                 <img src={doctor.profile_picture} alt="" className='w-28 h-28 rounded-full border-4 border-[#275596]' />
                             </div>
-                            <div className='text-center mt-18'>
+                            <div className='text-center mt-18 lg:text-base text-sm'>
                                 <p><span className='font-semibold'>Name:</span> {doctor.name}</p>
                                 <p><span className='font-semibold'>Degree:</span> {doctor.degree}</p>
                                 <p><span className='font-semibold'>Chamber:</span> {doctor.chamber}</p>
@@ -104,13 +104,13 @@ const Doctors = () => {
             <section>
                 <h1 className="lg:text-xl text-lg font-semibold">Neuro Medicine Department</h1>
                 <p className="w-[3%] border-b-2 border-blue-800"></p>
-                <div className='my-18 grid lg:grid-cols-3 grid-cols-1 gap-5'>
+                <div className='my-18 grid lg:grid-cols-3 grid-cols-1 lg:gap-5 gap-21'>
                     {
                         NeuroMedicine.map((doctor, index) => <div className='shadow-md p-2 bg-white relative h-48 border-2 border-[#275596] rounded-xl' key={index}>
                             <div className='absolute -top-14 left-[35%]'>
                                 <img src={doctor.profile_picture} alt="" className='w-28 h-28 rounded-full border-4 border-[#275596]' />
                             </div>
-                            <div className='text-center mt-18'>
+                            <div className='text-center mt-18 lg:text-base text-sm'>
                                 <p><span className='font-semibold'>Name:</span> {doctor.name}</p>
                                 <p><span className='font-semibold'>Degree:</span> {doctor.degree}</p>
                                 <p><span className='font-semibold'>Chamber:</span> {doctor.chamber}</p>
