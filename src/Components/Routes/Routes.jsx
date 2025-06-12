@@ -26,9 +26,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/doctors',
-                element: <PrivateRoutes>
-                    <Doctors></Doctors>
-                </PrivateRoutes>
+                element: <Doctors></Doctors>
             },
             {
                 path: '/login',
