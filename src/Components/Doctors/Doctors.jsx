@@ -81,6 +81,25 @@ const Doctors = () => {
                     }
                 </div>
             </section>
+            {/* Dialysis Department */}
+            <section>
+                <h1 className="lg:text-xl text-lg font-semibold">Dialysis Department</h1>
+                <p className="w-[3%] border-b-2 border-blue-800"></p>
+                <div className='my-18 grid grid-cols-3 gap-5'>
+                    {
+                        Dialysis.map((doctor, index) => <div className='shadow-md p-2 bg-white relative h-48 border-2 border-[#275596] rounded-xl' key={index}>
+                            <div className='absolute -top-14 left-[35%]'>
+                                <img src={doctor.profile_picture} alt="" className='w-28 h-28 rounded-full border-4 border-[#275596]' />
+                            </div>
+                            <div className='text-center mt-18'>
+                                <p><span className='font-semibold'>Name:</span> {doctor.name}</p>
+                                <p><span className='font-semibold'>Degree:</span> {doctor.degree}</p>
+                                <p><span className='font-semibold'>Chamber:</span> {doctor.chamber}</p>
+                            </div>
+                        </div>)
+                    }
+                </div>
+            </section>
         </div>
     );
 };
