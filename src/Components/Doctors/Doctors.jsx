@@ -1,6 +1,17 @@
 import DoctorsData from '../../../public/Doctors.json'
 const Doctors = () => {
     const { Medicine, Dental, Dialysis, Eye, NeuroMedicine, Skin } = DoctorsData.departments;
+    const dummyNotice = [
+        {
+            name: "The seat limit of Dengue Department is full. For emergency, contact MediTicket office."
+        },
+        {
+            name: "Don't trust the outsources. We do everything in legal way no third party required."
+        },
+        {
+            name: "Apply as Nurse - There are open vacancies in Medicine Department."
+        }
+    ];
     return (
         <div className="mx-auto doctors p-5">
             <h1 className="text-center text-3xl font-semibold">Our Doctors</h1>
