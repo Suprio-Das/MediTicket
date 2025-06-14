@@ -25,7 +25,7 @@ const Ticket = ({ newTicket }) => {
             width: 70,
             height: 70,
             type: "svg",
-            data: `http://localhost:5173/verification/${regNo}`,
+            data: `https://mediticket-d7481.web.app/verification/${regNo}`,
             dotsOptions: {
                 color: "#4267b2",
                 type: "rounded"
