@@ -1,7 +1,10 @@
 import Lottie from "lottie-react";
 import VerifiedBadge from '../../assets/VerifiedBadge.json';
+import { useLoaderData } from "react-router";
 
 const TicketVerification = () => {
+    const data = useLoaderData();
+    console.log(data);
     return (
         <div className="min-h-[calc(100vh-120px)] flex items-center justify-center">
             <div>
