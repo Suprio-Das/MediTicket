@@ -34,7 +34,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/verification/:regNo',
-                loader: ({ params }) => fetch(`http://localhost:5000/verification?regno=${params.regNo}`),
+                loader: ({ params }) => fetch(`https://mediticketserver.onrender.com/verification?regno=${params.regNo}`),
                 element: <TicketVerification></TicketVerification>
             }
         ]

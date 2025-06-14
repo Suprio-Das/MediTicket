@@ -25,7 +25,7 @@ const Home = () => {
 
     useEffect(() => {
         // fetching current rooms capacity
-        fetch('http://localhost:5000/rooms')
+        fetch('https://mediticketserver.onrender.com/rooms')
             .then(res => res.json())
             .then(data => setRooms(data[0]))
     }, [ticket])
@@ -63,7 +63,7 @@ const Home = () => {
                 Dialysis: rooms.Dialysis,
                 NeuroMedicine: rooms.NeuroMedicine
             }
-            fetch('http://localhost:5000/rooms', {
+            fetch('https://mediticketserver.onrender.com/rooms', {
                 method: "PUT",
                 headers: {
                     "content-type": "application/json"
@@ -83,7 +83,7 @@ const Home = () => {
                 Dialysis: rooms.Dialysis,
                 NeuroMedicine: rooms.NeuroMedicine
             }
-            fetch('http://localhost:5000/rooms', {
+            fetch('https://mediticketserver.onrender.com/rooms', {
                 method: "PUT",
                 headers: {
                     "content-type": "application/json"
@@ -103,7 +103,7 @@ const Home = () => {
                 Dialysis: rooms.Dialysis,
                 NeuroMedicine: rooms.NeuroMedicine
             }
-            fetch('http://localhost:5000/rooms', {
+            fetch('https://mediticketserver.onrender.com/rooms', {
                 method: "PUT",
                 headers: {
                     "content-type": "application/json"
@@ -123,7 +123,7 @@ const Home = () => {
                 Dialysis: rooms.Dialysis,
                 NeuroMedicine: rooms.NeuroMedicine
             }
-            fetch('http://localhost:5000/rooms', {
+            fetch('https://mediticketserver.onrender.com/rooms', {
                 method: "PUT",
                 headers: {
                     "content-type": "application/json"
@@ -143,7 +143,7 @@ const Home = () => {
                 Dialysis: currentCapacity,
                 NeuroMedicine: rooms.NeuroMedicine
             }
-            fetch('http://localhost:5000/rooms', {
+            fetch('https://mediticketserver.onrender.com/rooms', {
                 method: "PUT",
                 headers: {
                     "content-type": "application/json"
@@ -163,7 +163,7 @@ const Home = () => {
                 Dialysis: rooms.Dialysis,
                 NeuroMedicine: currentCapacity
             }
-            fetch('http://localhost:5000/rooms', {
+            fetch('https://mediticketserver.onrender.com/rooms', {
                 method: "PUT",
                 headers: {
                     "content-type": "application/json"
@@ -176,7 +176,7 @@ const Home = () => {
         setTicket(ticketInfo);
 
         // Sending Ticket data to server
-        fetch('http://localhost:5000/tickets', {
+        fetch('https://mediticketserver.onrender.com/tickets', {
             method: "POST",
             headers: {
                 "content-type": "application/json"
