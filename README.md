@@ -11,7 +11,7 @@ MediTicket is a medical ticket managing website from where tickets for specific 
 2. Printable e-ticket generation with QR code
 3. Patient ticket validity check through scanning QR code.
 4. Daily total patient and ticket income will be displayed.
-5. Show Department wise all Doctors list.
+5. Department wise all Doctors list shown.
 
 ### Technologies
 1. Tailwind CSS
