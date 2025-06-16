@@ -9,7 +9,7 @@ MediTicket is a medical ticket managing website from where tickets for specific 
 ### Features:
 1. Ticket sales based on room capacity and specific time period
 2. Printable e-ticket generation with QR code
-3. Patient ticket information will be displayed on QR code scan.
+3. Patient ticket validity check through scanning QR code.
 4. Daily total patient and ticket income will be displayed.
 5. Show Department wise all Doctors list.
 
