@@ -25,4 +25,4 @@ MediTicket is a medical ticket managing website from where tickets for specific 
 9. QR Code Styling
 10. Chart.js
 
-**Backend Repository: **
+**Backend Repository:**
