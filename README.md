@@ -31,4 +31,5 @@ MediTicket is a medical ticket managing website from where tickets for specific 
 Suprio Das
 <br>
 **Email**: suprio.cse@gmail.com
-
+<br>
+**LinkedIn**: <a href="https://www.linkedin.com/in/supriodas03/">Visit</a>
