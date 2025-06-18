@@ -29,3 +29,4 @@ MediTicket is a medical ticket managing website from where tickets for specific 
 
 ### Owner Details
 Suprio Das
+**Email**: suprio.cse@gmail.com
