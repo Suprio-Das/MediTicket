@@ -26,3 +26,6 @@ MediTicket is a medical ticket managing website from where tickets for specific 
 10. Chart.js
 
 **Backend Repository:** <a href="https://github.com/Suprio-Das/MediTicket-Server">Server</a>
+
+### Owner Details
+Suprio Das
