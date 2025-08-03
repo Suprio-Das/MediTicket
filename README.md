@@ -15,6 +15,7 @@ MediTicket is a medical ticket managing website from where tickets for specific 
 5. View Total Paitents and Ticket Sells of a single day
 6. View Monthly Patients Statistics
 7. View Monthly Sells Statistics
+8. Export Statistics as Excel Sheet
 
 ### Technologies
 1. Tailwind CSS
