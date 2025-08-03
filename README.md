@@ -13,6 +13,7 @@ MediTicket is a medical ticket managing website from where tickets for specific 
 4. Department wise all Doctors list shown.
 #### Admin Features:
 5. View Total Paitents and Ticket Sells of a single day
+6. View Monthly Patients Statistics
 
 ### Technologies
 1. Tailwind CSS
