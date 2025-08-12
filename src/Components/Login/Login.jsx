@@ -5,9 +5,9 @@ import { useLocation, useNavigate } from 'react-router';
 const Login = () => {
     const [error, setError] = useState({});
     const { handleLoginWithEmailAndPass } = useContext(AuthContext);
-    const location = useLocation();
+    // const location = useLocation();
     const navigate = useNavigate();
-    const from = location.state || '/login'
+    // const from = location.state || '/login'
     const handleLogin = (e) => {
         e.preventDefault();
         const form = e.target;
@@ -17,7 +17,7 @@ const Login = () => {
         handleLoginWithEmailAndPass(email, password)
             .then((user) => {
                 if (user) {
-                    navigate(from);
+                    navigate('/');
                     setError();
                 }
             })
