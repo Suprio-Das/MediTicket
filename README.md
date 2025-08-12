@@ -9,9 +9,13 @@ MediTicket is a medical ticket managing website from where tickets for specific 
 ### Features:
 1. Ticket sales based on room capacity and specific time period
 2. Printable e-ticket generation with QR code
-3. Patient ticket information will be displayed on QR code scan.
-4. Daily total patient and ticket income will be displayed.
-5. Show Department wise all Doctors list.
+3. Patient ticket validity check through scanning QR code.
+4. Department wise all Doctors list shown.
+#### Admin Features:
+5. View Total Paitents and Ticket Sells of a single day
+6. View Monthly Patients Statistics
+7. View Monthly Sells Statistics
+8. Export Statistics as Excel Sheet
 
 ### Technologies
 1. Tailwind CSS
@@ -24,3 +28,12 @@ MediTicket is a medical ticket managing website from where tickets for specific 
 8. Html2PDF
 9. QR Code Styling
 10. Chart.js
+
+**Backend Repository:** <a href="https://github.com/Suprio-Das/MediTicket-Server">Server</a>
+
+### Owner Details
+Suprio Das
+<br>
+**Email**: suprio.cse@gmail.com
+<br>
+**LinkedIn**: <a href="https://www.linkedin.com/in/supriodas03/">Visit</a>
